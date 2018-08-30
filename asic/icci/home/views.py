@@ -28,6 +28,8 @@ from events.models import Event
 from ico.models import IcoEvent
 from video.models import Movie
 from rss_reader.models import Feeds
+from coinmarketcap.models import Coinmarketcap
+
 
 
 # Create your views here.
@@ -47,6 +49,12 @@ def home(request):
     # rss
     rss_feeds = Feeds.objects.all()
 
+    # coinmarket
+    coinmarketcap = Coinmarketcap.objects.all()
+    cmc_BTC = Coinmarketcap.objects.filter(cmc_name="Bitcoin")
+
+
+    
     return render(request, 'home.html', {
         'events':events[0:5],
         'ico_live':ico_live[0:5], 
@@ -54,8 +62,9 @@ def home(request):
         'ico_finished': ico_finished[0:5],
         'filmy': video[0:14], 
         'filmy1': video[0:14], 
-        'rss_feeds': rss_feeds[3:37]       
-        
+        'rss_feeds': rss_feeds[3:37],       
+        'coinmarketcap': coinmarketcap[2:12],
+        'coinmarketcap1': cmc_BTC,      
         })
 
 

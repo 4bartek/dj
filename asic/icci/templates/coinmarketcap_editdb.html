@@ -1,0 +1,27 @@
+{% extends 'glowny.html' %}
+
+{% load bootstrap %}
+{% block title %} Edycja bazy coinmarketcap {% endblock %}
+
+{% block body %}
+<div class="card" style="width: 600px">
+    <div class="card-body">
+        <h5 class="card-title"><h1>Edycja bazy coinmarketcap</h1></h5><br>
+        <div class="alert alert-primary" role="alert">
+          aby usunąć bazę coinmarketcap - remove, aby pobrać - get
+        </div>
+      <form role="form" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{form|bootstrap}}
+          {{x.crypto}}
+          <button type="submit" class="btn btn-secondary" href="{% url 'wszystkie_filmy' %}">Cofnij</button>
+          <button type="submit" class="btn btn-primary" name="get_all_coinmarketdata">Pobierz</button>
+          <button type="submit" class="btn btn-danger" name="remove_all_coinmarketdata">Usuń bazę!</button>
+      </form>
+      <div>
+          <br>
+          <h1>{{val}}</h1>
+      </div>
+    </div>
+  </div>
+{% endblock %}

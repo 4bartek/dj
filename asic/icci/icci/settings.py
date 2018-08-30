@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'ico',
     'events',
     'home',
+    'coinmarketcap',
 ]
 
 MIDDLEWARE = [

@@ -38,21 +38,15 @@
     }
 
     .desktop {
-
         background-color: #fff;
         margin-top: 0.1%;
         margin-right: 0.1%;
         margin-left: 0.1%;
-        height: 99vh; 
+        height: 90vh; 
         border-color: #000 !important;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-
-
-        
-        border-bottom: 0px;
+     
         }
 
     .row {
@@ -60,24 +54,14 @@
         margin-right: 0px;   
         }
 
-    .margin {
-        margin-top: 5%;
-        }
 
-    .margin1 {
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-        }
 
-    .contentCard {
-        padding: 5%;
-        }
+
 
     .panelCard {
         background-color: #FFF;
         border-color: #000;
         border-radius: 15px;
-        height: 50%;
         }
 
 
@@ -131,10 +115,7 @@
 
     
     
-    .margines {
-        padding-top: 0%;
-        padding-bottom: 0.5%;
-    }    
+
     
     .noPadding {
          padding-right: 5px;
@@ -142,38 +123,47 @@
     }
     
     .kartaMenu {
-        padding: 0%;
         background-color: #378c98;
         color: #fff;
         text-align: center;
         border-color: #000 !important;
         border-radius: 5px;
+        padding: 1% 7%;
+        margin: 0% 0.05%;
+        width: 33.2%;
+    
 
     }
     
     .zagiecieP {
-                border-bottom-right-radius: 225px;
-
+    border-bottom-right-radius: 225px;
     }
     
-        .zagiecieL {
-                border-bottom-right-radius: 225px;
-
+    .zagiecieL {
+        border-bottom-right-radius: 225px;
     }
     
-    .nawigator {
-  position: sticky;
-  top: calc(100vh);
-    }
+    
 
     
-    .skrin {
-        
-        width: 100%;
+    .monitor {
+        margin-top: 2%;
+        margin-left: 5px;
+        margin-right: 5px;
+
         height: 80vh;
-        background-color: #4ec6d8;
-        margin-top: 3%;
+        width: 100%;
+        border-radius: 5px;
+      
+        background-color: #205158;
     }
+    
+    .galleryBase { 
+        margin-top: 15%;
+        
+    }
+    
+    
     
     
     
@@ -194,6 +184,7 @@
 
     
 
+   
     
     
     
@@ -201,255 +192,91 @@
     
     
     
-    
-    
-    
-    
-    
-<!-- NAVIGATOR -->    
+<!-- INTERFACE -->        
     
 <div class="desktop"> 
-
-    
-        <div class="row">
-            <div class="skrin">     
-                <div class="col">
-                    <div id="a1" class="tabcontent">
-                        <div id="flip1">INFORMACJE
-                        </div>
-                            
-                        <div id="panel1">INFORMACJE
-                        </div>
-                            
-                    </div>  
+    <div class="row">
+        <div class="monitor">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">  
                     
-                    <div id="a2" class="tabcontent">
-                        <div id="flip2">rzedze
-                        </div>
-                            
-                        <div id="panel2">rzedze
-                        </div>
-                            
-                    </div>      
-
-                    <div id="a3" class="tabcontent">
-                        <div id="flip2">narzedziami
-                        </div>
-                            
-                        <div id="panel2">narzedziami
-                        </div>
-                            
-                    </div>                    
-                </div> 
+                    <div class="col-md-6">
+                        
+                        adsadas
+                        
+                        
+                    </div>    
+                    
+                    <div class="col-md-6">
+                        
+                        dsadas
+                        
+                        
+                        
+                    </div>
+                
+                    
+                    
+                </div>
+                
+            <div class="col-md-6">
+                
+                <div class="galleryBase">
+                            <div id="gallery">
+                                
+                                <img 
+			 src="images/thumbs/thumb1.jpg"
+			 data-image="https://images.unsplash.com/photo-1512325525506-d15b8e5866e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c9669670ffeed2cb29a094049518cd1&auto=format&fit=crop&w=1409&q=80"
+			 >
+                                    {% for x in filmy1 %}
+                                        <img alt="Youtube Video"
+                                        data-type="youtube"
+                                        data-videoid="{{x.videoID}}"
+                                        >
+                                    {% endfor %} 
+                                </div>
+                    </div>
+                </div>
+            
+            </div>
             </div>    
-        </div>
+        </div>  
+    </div>   
+</div>
+
+
     
     
     
+    
+    
+    
+    
+    
+    
+    
+<!-- NAVIGATOR -->        
     <div class="nawigator">  
         <div class="container-fluid">
             <div class="row margines">
                 
-                <div class="col-sm-4 noPadding">
+                
                     <div class="kartaMenu">
                         <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
                     </div>
-                </div>
                 
-                <div class="col-sm-4 noPadding">
                     <div class="kartaMenu">
                         <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
                     </div>
-                </div>
            
-                <div class="col-sm noPadding">
+                    
                     <div class="kartaMenu"><img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> </div>
-                </div>
     
             </div>
         </div>    
     </div>    
- </div>   
-    
-    
-<!-- SCREEN -->    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--
-    
-    
-  <div class="col-sm-1">
-           
-           
-       
-       <div class="col-sm-1">
-           
-           <p onclick="openCity(event, 'a2')" id="defaultOpen">2</p>
-       </div> 
-       
-       <div class="col-sm-1">
-           
-           <p onclick="openCity(event, 'a3')" id="defaultOpen">3</p>
-       </div> 
-
----------------
-
-
-
-
-    
-        <div class="row">            
-            <!-- NAVIGATOR 
-            <div class="col-sm-3 margin">
-                
-                <div class="panelCard">
-                <div class="tab menu">
-                    <div class="row">
-                        
-                        
-
-                    </div>
-                </div> 
-                </div>  
-            </div>
-        
-            
-            <div class="col-sm-9 margin">
-                
-                <div class="col">
-                
-                 <div id="a1" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip1">INFORMACJE</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel1">
-                                                <div class="container">
-                                                    
-                                                    	<div id="gallery" style="">
-                                    {% for x in filmy1 %}
-
-
-                                    <img alt="Youtube Video"
-                                         data-type="youtube"
-                                         data-videoid="{{x.videoID}}"
-                                         data-description="You can include youtube videos easily!">
-
-
-
-
-                            {% endfor %}
-                                </div>
-
-
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                        </div>  
-                        </div>  
-                        </div>  
-                        </div>  
-
-
-
-                 <div id="a2" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip2">RYNKI</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel2">RYNKI</div>
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                            
-                        </div>  
-                    </div>
-                    
-                    
-                 <div id="a3" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip3">NARZĘDZIA</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel3">NARZĘDZIA</div>
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                            
-                        </div>  
-                    </div>                    
-                  
-            -->
-    
-    
-
-
-
-
-    
-        
-  
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
     
 
@@ -519,6 +346,59 @@
 </body>
 </html>
     
+
+
+<div class="col">
+                        <div id="a1" class="tabcontent">
+                            <div id="flip1">INFORMACJE
+                            </div>
+
+                            <div id="panel1">INFORMACJE
+                            </div>
+
+                        </div>  
+
+                        <div id="a2" class="tabcontent">
+                            <div id="flip2">rzedze
+                            </div>
+
+                            <div id="panel1">rzedze
+                            </div>
+
+                        </div>      
+
+                        <div id="a3" class="tabcontent">
+                            <div id="flip2">narzedziami
+                            </div>
+
+                            <div id="panel2">narzedziami
+                            </div>
+
+                          </div>  
+                            </div>
+
+
+
+
+
+
+<div class="col-sm-7">
+                <div class="container">                            
+                  <!--  <div id="gallery" style="">
+                        {% for x in filmy1 %}
+                            <img alt="Youtube Video"
+                            data-type="youtube"
+                            data-videoid="{{x.videoID}}"
+                            data-description="You can include youtube videos easily!">
+                        {% endfor %} 
+                    </div> -->
+                </div>
+            </div>
+
+
+
+
+
 
 <!-- 
 
@@ -720,3 +600,225 @@ x.rss_feed_source <br>
 {% endfor %}
 
 {% endblock %}
+
+
+
+
+
+
+   
+    
+<!-- SCREEN -->    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--
+    
+
+
+
+<div class="skrin">     
+                    <div class="col">
+                        <div id="a1" class="tabcontent">
+                            <div id="flip1">INFORMACJE
+                            </div>
+
+                            <div id="panel1">INFORMACJE
+                            </div>
+
+                        </div>  
+
+                        <div id="a2" class="tabcontent">
+                            <div id="flip2">rzedze
+                            </div>
+
+                            <div id="panel1">rzedze
+                            </div>
+
+                        </div>      
+
+                        <div id="a3" class="tabcontent">
+                            <div id="flip2">narzedziami
+                            </div>
+
+                            <div id="panel2">narzedziami
+                            </div>
+
+                        </div>                    
+                    </div> 
+                </div>    
+
+
+
+    
+  <div class="col-sm-1">
+           
+           
+       
+       <div class="col-sm-1">
+           
+           <p onclick="openCity(event, 'a2')" id="defaultOpen">2</p>
+       </div> 
+       
+       <div class="col-sm-1">
+           
+           <p onclick="openCity(event, 'a3')" id="defaultOpen">3</p>
+       </div> 
+
+---------------
+
+
+
+
+    
+        <div class="row">            
+            <!-- NAVIGATOR 
+            <div class="col-sm-3 margin">
+                
+                <div class="panelCard">
+                <div class="tab menu">
+                    <div class="row">
+                        
+                        
+
+                    </div>
+                </div> 
+                </div>  
+            </div>
+        
+            
+            <div class="col-sm-9 margin">
+                
+                <div class="col">
+                
+                 <div id="a1" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip1">INFORMACJE</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel1">
+                                                <div class="container">
+                                                    
+                                                    	<div id="gallery" style="">
+                                    {% for x in filmy1 %}
+
+
+                                    <img alt="Youtube Video"
+                                         data-type="youtube"
+                                         data-videoid="{{x.videoID}}"
+                                         data-description="You can include youtube videos easily!">
+
+
+
+
+                            {% endfor %}
+                                </div>
+
+
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                        </div>  
+                        </div>  
+                        </div>  
+                        </div>  
+
+
+
+                 <div id="a2" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip2">RYNKI</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel2">RYNKI</div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                            
+                        </div>  
+                    </div>
+                    
+                    
+                 <div id="a3" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip3">NARZĘDZIA</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel3">NARZĘDZIA</div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                            
+                        </div>  
+                    </div>                    
+                  
+            -->
+    
+    
+
+
+
+
+    
+        
+  
+    
+    
+    
+    
+    
+    
+    
+    

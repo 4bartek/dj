@@ -11,4 +11,5 @@ urlpatterns = [
     path('rss_reader/', include('rss_reader.urls')),
     path('ico/', include('ico.urls')),
     path('events/', include('events.urls')),
+    path('coinmarketcap/', include('coinmarketcap.urls')),
 ]

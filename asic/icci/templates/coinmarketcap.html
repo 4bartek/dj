@@ -1,0 +1,74 @@
+
+{% block content %}
+
+<h1>opcje (muszą być w nawiasach)</h1>
+
+
+x.cmc_coin_id <br>
+x.cmc_name <br>
+x.cmc_symbol <br>
+x.cmc_rank <br>
+x.cmc_price_usd<br> 
+x.cmc_price_btc <br>
+x.cmc_price_pln <br>
+x.cmc_capitalization<br>
+x.cmc_volume_usd_24h <br>
+x.cmc_capitalization_pln <br>
+x.cmc_market_cap_usd <br>
+x.cmc_available_supply <br>
+x.cmc_total_supply <br>
+x.cmc_max_supply <br>
+x.cmc_percent_change_1h<br> 
+x.cmc_percent_change_24h<br>
+x.cmc_percent_change_7d<br>
+x.cmc_last_updated<br>
+
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'moj.css' %}">
+</head>
+<body>
+
+
+
+<br><br>
+    <div>
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Crypto</th>
+        <th scope="col">Cena usd</th>
+        <th scope="col">Cena pln</th>
+        </tr>
+    </thead>
+
+    <h1>coinmarketcap</h1>
+        <tbody>    
+    {% for x in coinmarketcap %}
+        
+                <tr>
+                  <th scope="row"> </th>
+                  <td>{{x.cmc_name}}</td>
+                  <td>{{x.cmc_price_usd}}</td>
+                  <td>{{x.cmc_price_pln}}</td>
+                </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
+
+</body>
+</html>
