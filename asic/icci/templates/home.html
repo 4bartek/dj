@@ -26,12 +26,16 @@
 <style>
     
     body {
-        width: 100%;
         background-color: #205158;
-        font-family: roboto !important;
+        font-family: lato !important;
         font-size: 16px !important;
         }
 
+    .container-fluid {
+        padding-right: 0px; 
+        padding-left: 0px; 
+        
+    }
 
     .desktop {
 
@@ -41,8 +45,14 @@
         margin-left: 0.1%;
         height: 99vh; 
         border-color: #000 !important;
-        border-radius: 15px;
-        padding: 1%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+
+        
+        border-bottom: 0px;
         }
 
     .row {
@@ -55,7 +65,8 @@
         }
 
     .margin1 {
-        margin: 5%
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
         }
 
     .contentCard {
@@ -121,15 +132,51 @@
     
     
     .margines {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 0%;
+        padding-bottom: 0.5%;
     }    
     
+    .noPadding {
+         padding-right: 5px;
+         padding-left: 5px;
+    }
     
-    
-    
-    
+    .kartaMenu {
+        padding: 0%;
+        background-color: #378c98;
+        color: #fff;
+        text-align: center;
+        border-color: #000 !important;
+        border-radius: 5px;
 
+    }
+    
+    .zagiecieP {
+                border-bottom-right-radius: 225px;
+
+    }
+    
+        .zagiecieL {
+                border-bottom-right-radius: 225px;
+
+    }
+    
+    .nawigator {
+  position: sticky;
+  top: calc(100vh);
+    }
+
+    
+    .skrin {
+        
+        width: 100%;
+        height: 80vh;
+        background-color: #4ec6d8;
+        margin-top: 3%;
+    }
+    
+    
+    
 </style>  
 
 </head>
@@ -159,18 +206,89 @@
     
     
     
+<!-- NAVIGATOR -->    
+    
+<div class="desktop"> 
+
+    
+        <div class="row">
+            <div class="skrin">     
+                <div class="col">
+                    <div id="a1" class="tabcontent">
+                        <div id="flip1">INFORMACJE
+                        </div>
+                            
+                        <div id="panel1">INFORMACJE
+                        </div>
+                            
+                    </div>  
+                    
+                    <div id="a2" class="tabcontent">
+                        <div id="flip2">rzedze
+                        </div>
+                            
+                        <div id="panel2">rzedze
+                        </div>
+                            
+                    </div>      
+
+                    <div id="a3" class="tabcontent">
+                        <div id="flip2">narzedziami
+                        </div>
+                            
+                        <div id="panel2">narzedziami
+                        </div>
+                            
+                    </div>                    
+                </div> 
+            </div>    
+        </div>
     
     
-<div class="desktop">    
-<div class="container-fluid">
     
-    
-   <div class="row margines">
-       
-       <div class="col-sm-1">
+    <div class="nawigator">  
+        <div class="container-fluid">
+            <div class="row margines">
+                
+                <div class="col-sm-4 noPadding">
+                    <div class="kartaMenu">
+                        <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 noPadding">
+                    <div class="kartaMenu">
+                        <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
+                    </div>
+                </div>
            
-           <p onclick="openCity(event, 'a1')" id="defaultOpen">1</p>
-       </div> 
+                <div class="col-sm noPadding">
+                    <div class="kartaMenu"><img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> </div>
+                </div>
+    
+            </div>
+        </div>    
+    </div>    
+ </div>   
+    
+    
+<!-- SCREEN -->    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--
+    
+    
+  <div class="col-sm-1">
+           
+           
        
        <div class="col-sm-1">
            
@@ -181,80 +299,15 @@
            
            <p onclick="openCity(event, 'a3')" id="defaultOpen">3</p>
        </div> 
-       
-       
-       
-       
-        <!--   <img src="http://f.root-disc.pl/images/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip"> -->
-            <!--   <img src="http://f.root-disc.pl/images/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip"> -->
 
-       
+---------------
 
-       <div class="col-sm-1">4</div>
-       <div class="col-sm-1">5</div>
-       <div class="col-sm-1">6</div>
-       <div class="col-sm-1">7</div>
-       <div class="col-sm-1">8</div>
-       <div class="col-sm-1">9</div>
-       <div class="col-sm-1">10</div>
-       <div class="col-sm-1">11</div>
-       <div class="col-sm-1">12</div>
-       
-    </div>
-        
-        
-       <div class="row margines">
-       <div class="col-sm-1">1a</div>
-       <div class="col-sm-1">2a</div>
-       <div class="col-sm-1">3a</div>
-       <div class="col-sm-1">4a</div>
-       <div class="col-sm-1">5a</div>
-       <div class="col-sm-1">6a</div>
-       <div class="col-sm-1">7a</div>
-       <div class="col-sm-1">8a</div>
-       <div class="col-sm-1">9a</div>
-       <div class="col-sm-1">10a</div>
-       <div class="col-sm-1">11a</div>
-       <div class="col-sm-1">12a</div>
-       
-    </div>    
-        
-           <div class="row margines">
-       <div class="col-sm-1">1b</div>
-       <div class="col-sm-1">2b</div>
-       <div class="col-sm-1">3b</div>
-       <div class="col-sm-1">4b</div>
-       <div class="col-sm-1">5b</div>
-       <div class="col-sm-1">6b</div>
-       <div class="col-sm-1">7b</div>
-       <div class="col-sm-1">8b</div>
-       <div class="col-sm-1">9b</div>
-       <div class="col-sm-1">10b</div>
-       <div class="col-sm-1">11b</div>
-       <div class="col-sm-1">12b</div>
-       
-    </div>   
-    
-        
-        
-        
-        
-        
-        
-        
-    </div>    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
     
         <div class="row">            
-            <!-- NAVIGATOR -->
+            <!-- NAVIGATOR 
             <div class="col-sm-3 margin">
                 
                 <div class="panelCard">
@@ -379,21 +432,12 @@
                         </div>  
                     </div>                    
                   
-            
+            -->
     
     
 
 
 
-    
-</div>
-</div>   
-</div>   
-
-    </div>   
-
-
-    
 
     
         
