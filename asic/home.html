@@ -1,0 +1,199 @@
+{% block content %}
+
+<h1>filmy1</h1>
+{% for x in filmy1 %}
+{{x.author}}  <br>
+{{x.videoID}}  <br>
+{% endfor %}
+
+
+<h1>opcje: (muszą być w nawiasach)</h1><br> 
+
+x.event_title <br>
+x.coins_id <br>
+x.coins_name<br>
+x.coins_name<br>
+x.coins_symbol <br>
+x.event_description<br>
+x.event_proof<br>
+x.event_source<br>
+x.event_date<br>
+x.event_created_date<br>
+x.event_feed_source<br>
+x.event_is_hot<br>
+x.event_vote_count<br>
+x.event_positive_vote_count<br>
+x.event_percentage<br>
+x.event_event_cat_id<br>
+x.event_event_cat_name<br>
+x.event_tip_symbol<br>
+x.event_tip_adress<br>
+x.event_twitter_account<br><br><br><br>
+
+
+<br>
+<br>
+<h1>filmy</h1>
+{% for x in filmy %}
+
+{{x.author}}  <br>
+{{x.icci_cat}} <br>
+{{x.icci_sub_cat}} <br>
+{{x.title}} <br>
+{{x.videoID}}  <br>
+{{x.publishedAt}}  <br>
+{{x.channelId}}  <br>
+{{x.description}}  <br>
+{{x.tags}}  <br>
+{{x.categoryId}}<br>  
+{{x.liveBroadcastContent}}<br>  
+{{x.defaultLanguage}}  <br>
+{{x.duration}}  <br>
+{{x.dimension}} <br>
+{{x.definition}}  <br>
+{{x.caption}}  <br>
+{{x.licensedContent}}<br>  
+{{x.projection}}  <br>
+{{x.viewCount}} <br>
+{{x.likeCount}}  <br>
+{{x.dislikeCount}}  <br>
+{{x.favoriteCount}}  <br>
+{{x.commentCount}}  <br>
+{{x.thumbnails_default}}  <br>
+{{x.thumbnails_medium}}  <br>
+{{x.thumbnails_high}}  <br>
+{{x.thumbnails_standard}}  <br>
+{{x.thumbnails_maxres}}  <br>
+#############
+<br><br>
+{% endfor %}
+
+
+    {% for x in events %}
+                
+        {{x.event_title}} <br>
+        {{x.coins_id}} <br>
+        {{x.coins_name}}<br>
+        {{x.coins_name}}<br>
+        {{x.coins_symbol}} <br>
+        {{x.event_description}}<br>
+        {{x.event_proof}}<br>
+        {{x.event_source}}<br>
+        {{x.event_date}}<br>
+        {{x.event_created_date}}<br>
+        {{x.event_feed_source}}<br>
+        {{x.event_is_hot}}<br>
+        {{x.event_vote_count}}<br>
+        {{x.event_positive_vote_count}}<br>
+        {{x.event_percentage}}<br>
+        {{x.event_event_cat_id}}<br>
+        {{x.event_event_cat_name}}<br>
+        {{x.event_tip_symbol}}<br>
+        {{x.event_tip_adress}}<br>
+        {{x.event_twitter_account}}<br>
+
+        ##########
+
+    {% endfor %}
+
+
+<br><br><br>
+
+ICO.html
+<h1>opcje (muszą być w nawiasach)</h1>
+
+
+x.ico_title <br>
+x.ico_description<br> 
+x.ico_img <br>
+x.ico_website_link<br> 
+x.ico_start_time<br>
+x.ico_end_time <br>
+x.ico_icowatchlist_url<br> 
+x.ico_source <br>
+x.ico_typ <br>
+
+<br><br>
+
+    <div>
+    <h1>ico_live</h1>
+        {% for x in ico_live %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_upcoming</h1> 
+
+        {% for x in ico_upcoming %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_finished</h1> 
+
+
+        {% for x in ico_finished %}                    
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+
+
+#rss
+
+<h3>rss_reader - rss_reader.HTML</h3>
+<h1>opcje</h1>
+
+x.rss_feed_title    <br>
+x.rss_feed_description <br>
+x.rss_feed_img <br>
+x.rss_feed_link <br>
+x.rss_feed_published<br> 
+x.rss_feed_source <br>
+
+<br><br>
+
+{% for x in rss_feeds %}
+    {{x.rss_feed_title}}    <br>
+    {{x.rss_feed_description}} <br>
+    {{x.rss_feed_img}} <br>
+    {{x.rss_feed_link}} <br>
+    {{x.rss_feed_published}}<br> 
+    {{x.rss_feed_source}} <br>
+    <br><br><br>
+{% endfor %}
+
+{% endblock %}

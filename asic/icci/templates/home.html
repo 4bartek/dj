@@ -1,0 +1,678 @@
+    {% block content %}
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    
+
+<!-- BASE -->
+    
+	<meta charset="UTF-8">
+	<title>icci</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script type='text/javascript' src='http://f.root-disc.pl/js/js/jquery-11.0.min.js'></script>	
+	<script type='text/javascript' src='http://f.root-disc.pl/js/js/unitegallery.min.js'></script>	
+
+	<link rel='stylesheet' href='http://f.root-disc.pl/unite-gallery.css' type='text/css' />
+	
+	<script type='text/javascript' src='http://f.root-disc.pl/js/js/ug-theme-grid.js'></script>
+	
+    
+<!-- STYLE -->
+
+<style>
+    
+    body {
+        width: 100%;
+        background-color: #205158;
+        font-family: roboto !important;
+        font-size: 16px !important;
+        }
+
+
+    .desktop {
+
+        background-color: #fff;
+        margin-top: 0.1%;
+        margin-right: 0.1%;
+        margin-left: 0.1%;
+        height: 99vh; 
+        border-color: #000 !important;
+        border-radius: 15px;
+        padding: 1%;
+        }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;   
+        }
+
+    .margin {
+        margin-top: 5%;
+        }
+
+    .margin1 {
+        margin: 5%
+        }
+
+    .contentCard {
+        padding: 5%;
+        }
+
+    .panelCard {
+        background-color: #FFF;
+        border-color: #000;
+        border-radius: 15px;
+        height: 50%;
+        }
+
+
+
+    /*  TABLINKS  */
+
+
+        .tab button.active {
+            background-color: #4ec6d8;
+            width: 100%;
+            box-shadow: 2px 2px 15px #378c98;
+            /*box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5) inset;*/
+            border: 0px;
+
+        }
+
+        .tablinks {
+            width: 100%;
+            height: 75px;
+            margin: 2%;
+            background-color: #378c98;
+            box-shadow: 2px 2px 15px #378c98;
+            border: 0px;
+            padding: 0;
+            border-radius: 15px;
+
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 0px 0px;
+            border: 0px solid #ccc;
+            border-top: none;
+        }
+
+
+
+    /*  SLIDE  */
+
+
+        #panel1, #panel2, #panel3, #flip1, #flip2, #flip3 {
+            padding: 5px;
+            text-align: center;
+        }
+
+        #panel1, #panel2, #panel3 {
+            width: 100%;
+            padding: 5px;
+            display: none;
+        }
+
+    
+    
+    .margines {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }    
+    
+    
+    
+    
+    
+
+</style>  
+
+</head>
+    
+    
+    
+<!---------------------- END ---------------------->
+
+    
+    
+<!-- BODY -->
+
+	
+<body>
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div class="desktop">    
+<div class="container-fluid">
+    
+    
+   <div class="row margines">
+       
+       <div class="col-sm-1">
+           
+           <p onclick="openCity(event, 'a1')" id="defaultOpen">1</p>
+       </div> 
+       
+       <div class="col-sm-1">
+           
+           <p onclick="openCity(event, 'a2')" id="defaultOpen">2</p>
+       </div> 
+       
+       <div class="col-sm-1">
+           
+           <p onclick="openCity(event, 'a3')" id="defaultOpen">3</p>
+       </div> 
+       
+       
+       
+       
+        <!--   <img src="http://f.root-disc.pl/images/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip"> -->
+            <!--   <img src="http://f.root-disc.pl/images/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip"> -->
+
+       
+
+       <div class="col-sm-1">4</div>
+       <div class="col-sm-1">5</div>
+       <div class="col-sm-1">6</div>
+       <div class="col-sm-1">7</div>
+       <div class="col-sm-1">8</div>
+       <div class="col-sm-1">9</div>
+       <div class="col-sm-1">10</div>
+       <div class="col-sm-1">11</div>
+       <div class="col-sm-1">12</div>
+       
+    </div>
+        
+        
+       <div class="row margines">
+       <div class="col-sm-1">1a</div>
+       <div class="col-sm-1">2a</div>
+       <div class="col-sm-1">3a</div>
+       <div class="col-sm-1">4a</div>
+       <div class="col-sm-1">5a</div>
+       <div class="col-sm-1">6a</div>
+       <div class="col-sm-1">7a</div>
+       <div class="col-sm-1">8a</div>
+       <div class="col-sm-1">9a</div>
+       <div class="col-sm-1">10a</div>
+       <div class="col-sm-1">11a</div>
+       <div class="col-sm-1">12a</div>
+       
+    </div>    
+        
+           <div class="row margines">
+       <div class="col-sm-1">1b</div>
+       <div class="col-sm-1">2b</div>
+       <div class="col-sm-1">3b</div>
+       <div class="col-sm-1">4b</div>
+       <div class="col-sm-1">5b</div>
+       <div class="col-sm-1">6b</div>
+       <div class="col-sm-1">7b</div>
+       <div class="col-sm-1">8b</div>
+       <div class="col-sm-1">9b</div>
+       <div class="col-sm-1">10b</div>
+       <div class="col-sm-1">11b</div>
+       <div class="col-sm-1">12b</div>
+       
+    </div>   
+    
+        
+        
+        
+        
+        
+        
+        
+    </div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">            
+            <!-- NAVIGATOR -->
+            <div class="col-sm-3 margin">
+                
+                <div class="panelCard">
+                <div class="tab menu">
+                    <div class="row">
+                        
+                        
+
+                    </div>
+                </div> 
+                </div>  
+            </div>
+        
+            
+            <div class="col-sm-9 margin">
+                
+                <div class="col">
+                
+                 <div id="a1" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip1">INFORMACJE</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel1">
+                                                <div class="container">
+                                                    
+                                                    	<div id="gallery" style="">
+                                    {% for x in filmy1 %}
+
+
+                                    <img alt="Youtube Video"
+                                         data-type="youtube"
+                                         data-videoid="{{x.videoID}}"
+                                         data-description="You can include youtube videos easily!">
+
+
+
+
+                            {% endfor %}
+                                </div>
+
+
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                        </div>  
+                        </div>  
+                        </div>  
+                        </div>  
+
+
+
+                 <div id="a2" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip2">RYNKI</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel2">RYNKI</div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                            
+                        </div>  
+                    </div>
+                    
+                    
+                 <div id="a3" class="tabcontent">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="panelCard">
+                                
+                                    <div class="col-sm-9">
+                                    <div class="cardIcci">
+                                        <div id="flip3">NARZĘDZIA</div>
+
+                                    </div>
+                                    </div>     
+                                </div>
+
+                            </div> 
+                            
+                            <div class="col-sm-9">
+                                <div class="panelCard">
+                                    <div class="col-sm-9">
+                                        <div class="cardIcci">
+                                            <div id="panel3">NARZĘDZIA</div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>   
+                            
+                        </div>  
+                    </div>                    
+                  
+            
+    
+    
+
+
+
+    
+</div>
+</div>   
+</div>   
+
+    </div>   
+
+
+    
+
+    
+        
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- SCRIPTS -->	
+				
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="./js/script.js"></script>
+    
+  
+            <!-- TABBED CONTENT -->
+
+        
+            <script>        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+}
+          
+            // TABBED CONTENT DEFAULT OPEN 
+
+            document.getElementById("defaultOpen").click();
+
+          
+            // SLIDE
+            $(document).ready(function(){
+                $("#flip1").click(function(){
+                    $("#panel1").fadeIn("slow");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#flip2").click(function(){
+                    $("#panel2").fadeIn("slow");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#flip3").click(function(){
+                    $("#panel3").fadeIn("slow");
+                });
+            });
+
+            </script>
+                
+                		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery();
+
+		});
+		
+	</script>
+
+                
+	
+</body>
+</html>
+    
+
+<!-- 
+
+
+<h1>filmy1</h1>
+{% for x in filmy1 %}
+{{x.author}}  <br>
+{{x.videoID}}  <br>
+{% endfor %}
+
+
+<h1>opcje: (muszą być w nawiasach)</h1><br> 
+
+x.event_title <br>
+x.coins_id <br>
+x.coins_name<br>
+x.coins_name<br>
+x.coins_symbol <br>
+x.event_description<br>
+x.event_proof<br>
+x.event_source<br>
+x.event_date<br>
+x.event_created_date<br>
+x.event_feed_source<br>
+x.event_is_hot<br>
+x.event_vote_count<br>
+x.event_positive_vote_count<br>
+x.event_percentage<br>
+x.event_event_cat_id<br>
+x.event_event_cat_name<br>
+x.event_tip_symbol<br>
+x.event_tip_adress<br>
+x.event_twitter_account<br><br><br><br>
+
+
+<br>
+<br>
+<h1>filmy</h1>
+{% for x in filmy %}
+
+{{x.author}}  <br>
+{{x.icci_cat}} <br>
+{{x.icci_sub_cat}} <br>
+{{x.title}} <br>
+{{x.videoID}}  <br>
+{{x.publishedAt}}  <br>
+{{x.channelId}}  <br>
+{{x.description}}  <br>
+{{x.tags}}  <br>
+{{x.categoryId}}<br>  
+{{x.liveBroadcastContent}}<br>  
+{{x.defaultLanguage}}  <br>
+{{x.duration}}  <br>
+{{x.dimension}} <br>
+{{x.definition}}  <br>
+{{x.caption}}  <br>
+{{x.licensedContent}}<br>  
+{{x.projection}}  <br>
+{{x.viewCount}} <br>
+{{x.likeCount}}  <br>
+{{x.dislikeCount}}  <br>
+{{x.favoriteCount}}  <br>
+{{x.commentCount}}  <br>
+{{x.thumbnails_default}}  <br>
+{{x.thumbnails_medium}}  <br>
+{{x.thumbnails_high}}  <br>
+{{x.thumbnails_standard}}  <br>
+{{x.thumbnails_maxres}}  <br>
+#############
+<br><br>
+{% endfor %}
+
+
+    {% for x in events %}
+                
+        {{x.event_title}} <br>
+        {{x.coins_id}} <br>
+        {{x.coins_name}}<br>
+        {{x.coins_name}}<br>
+        {{x.coins_symbol}} <br>
+        {{x.event_description}}<br>
+        {{x.event_proof}}<br>
+        {{x.event_source}}<br>
+        {{x.event_date}}<br>
+        {{x.event_created_date}}<br>
+        {{x.event_feed_source}}<br>
+        {{x.event_is_hot}}<br>
+        {{x.event_vote_count}}<br>
+        {{x.event_positive_vote_count}}<br>
+        {{x.event_percentage}}<br>
+        {{x.event_event_cat_id}}<br>
+        {{x.event_event_cat_name}}<br>
+        {{x.event_tip_symbol}}<br>
+        {{x.event_tip_adress}}<br>
+        {{x.event_twitter_account}}<br>
+
+        ##########
+
+    {% endfor %}
+
+
+<br><br><br>
+
+ICO.html
+<h1>opcje (muszą być w nawiasach)</h1>
+
+
+x.ico_title <br>
+x.ico_description<br> 
+x.ico_img <br>
+x.ico_website_link<br> 
+x.ico_start_time<br>
+x.ico_end_time <br>
+x.ico_icowatchlist_url<br> 
+x.ico_source <br>
+x.ico_typ <br>
+
+<br><br>
+
+    <div>
+    <h1>ico_live</h1>
+        {% for x in ico_live %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_upcoming</h1> 
+
+        {% for x in ico_upcoming %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_finished</h1> 
+
+
+        {% for x in ico_finished %}                    
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+
+
+#rss
+
+<h3>rss_reader - rss_reader.HTML</h3>
+<h1>opcje</h1>
+
+x.rss_feed_title    <br>
+x.rss_feed_description <br>
+x.rss_feed_img <br>
+x.rss_feed_link <br>
+x.rss_feed_published<br> 
+x.rss_feed_source <br>
+
+<br><br>
+
+{% for x in rss_feeds %}
+    {{x.rss_feed_title}}    <br>
+    {{x.rss_feed_description}} <br>
+    {{x.rss_feed_img}} <br>
+    {{x.rss_feed_link}} <br>
+    {{x.rss_feed_published}}<br> 
+    {{x.rss_feed_source}} <br>
+    <br><br><br>
+{% endfor %}
+
+{% endblock %}

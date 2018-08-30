@@ -1,0 +1,27 @@
+
+
+{% block content %}
+
+<h3>rss_reader - rss_reader.HTML</h3>
+<h1>opcje</h1>
+
+x.rss_feed_title    <br>
+x.rss_feed_description <br>
+x.rss_feed_img <br>
+x.rss_feed_link <br>
+x.rss_feed_published<br> 
+x.rss_feed_source <br>
+
+<br><br>
+
+{% for x in rss_feeds %}
+    {{x.rss_feed_title}}    <br>
+    {{x.rss_feed_description}} <br>
+    {{x.rss_feed_img}} <br>
+    {{x.rss_feed_link}} <br>
+    {{x.rss_feed_published}}<br> 
+    {{x.rss_feed_source}} <br>
+    <br><br><br>
+{% endfor %}
+
+{% endblock %}

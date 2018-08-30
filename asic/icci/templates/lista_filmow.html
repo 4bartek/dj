@@ -1,0 +1,90 @@
+{% block content %}
+
+<!--    
+{% extends 'glowny.html' %}
+
+
+{% block title %} Lista filmow {% endblock %}
+
+
+
+{% block body %}
+<div class="jumbotron">
+      <h1 class="display-4">{% if user.is_authenticated %}
+            Witaj {{ user.username }}<br>
+            <a class="btn btn-primary" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+            <a class="btn btn-primary" href="{% url 'login' %}">Login</a>
+        {% endif %}
+      </h1> 
+        <hr class="my-4">-->
+        <h1>opcje (muszą być w nawiasach)</h1>
+
+            x.author  <br>
+            x.icci_cat <br>
+            x.icci_sub_cat <br>
+            x.title <br>
+            x.videoID  <br>
+            x.publishedAt  <br>
+            x.channelId  <br>
+            x.description  <br>
+            x.tags  <br>
+            x.categoryId<br>  
+            x.liveBroadcastContent<br>  
+            x.defaultLanguage  <br>
+            x.duration  <br>
+            x.dimension <br>
+            x.definition  <br>
+            x.caption  <br>
+            x.licensedContent<br>  
+            x.projection  <br>
+            x.viewCount <br>
+            x.likeCount  <br>
+            x.dislikeCount  <br>
+            x.favoriteCount  <br>
+            x.commentCount  <br>
+            x.thumbnails_default  <br>
+            x.thumbnails_medium  <br>
+            x.thumbnails_high  <br>
+            x.thumbnails_standard  <br>
+            x.thumbnails_maxres  <br>
+
+            <br><br><br>
+        
+        
+    
+        {% for x in filmy %}
+
+            {{x.author}}  <br>
+            {{x.icci_cat}} <br>
+            {{x.icci_sub_cat}} <br>
+            {{x.title}} <br>
+            {{x.videoID}}  <br>
+            {{x.publishedAt}}  <br>
+            {{x.channelId}}  <br>
+            {{x.description}}  <br>
+            {{x.tags}}  <br>
+            {{x.categoryId}}<br>  
+            {{x.liveBroadcastContent}}<br>  
+            {{x.defaultLanguage}}  <br>
+            {{x.duration}}  <br>
+            {{x.dimension}} <br>
+            {{x.definition}}  <br>
+            {{x.caption}}  <br>
+            {{x.licensedContent}}<br>  
+            {{x.projection}}  <br>
+            {{x.viewCount}} <br>
+            {{x.likeCount}}  <br>
+            {{x.dislikeCount}}  <br>
+            {{x.favoriteCount}}  <br>
+            {{x.commentCount}}  <br>
+            {{x.thumbnails_default}}  <br>
+            {{x.thumbnails_medium}}  <br>
+            {{x.thumbnails_high}}  <br>
+            {{x.thumbnails_standard}}  <br>
+            {{x.thumbnails_maxres}}  <br>
+            #############
+            <br><br>
+        {% endfor %}
+
+{% endblock %}

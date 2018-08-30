@@ -1,0 +1,74 @@
+{% block content %}
+
+<h1>opcje (muszą być w nawiasach)</h1>
+
+
+x.ico_title <br>
+x.ico_description<br> 
+x.ico_img <br>
+x.ico_website_link<br> 
+x.ico_start_time<br>
+x.ico_end_time <br>
+x.ico_icowatchlist_url<br> 
+x.ico_source <br>
+x.ico_typ <br>
+
+<br><br>
+
+    <div>
+    <h1>ico_live</h1>
+        {% for x in ico_live %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_upcoming</h1> 
+
+        {% for x in ico_upcoming %}
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+    ############################
+    
+    <div>
+    <h1>ico_finished</h1> 
+
+
+        {% for x in ico_finished %}                    
+            {{x.ico_title}} <br>
+            {{x.ico_description}}<br> 
+            {{x.ico_img}} <br>
+            {{x.ico_website_link}} <br> 
+            {{x.ico_start_time}} <br>
+            {{x.ico_end_time}} <br>
+            {{x.ico_icowatchlist_url}} <br> 
+            {{x.ico_source}} <br>
+            {{x.ico_typ}} <br>
+            <br><br><br>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

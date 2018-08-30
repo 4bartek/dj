@@ -1,0 +1,28 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block title %} Edycja bazy youtube {% endblock %}
+
+{% block body %}
+    <div class="card" style="width: 600px">
+      <div class="card-body">
+          <h5 class="card-title"><h1>Edycja bazy youtube</h1></h5><br>
+          <div class="alert alert-primary" role="alert">
+            aby usunąć bazę youtube - remove, aby pobrać - get
+          </div>
+        <form role="form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form|bootstrap}}
+            {{x.crypto}}
+            <button type="submit" class="btn btn-secondary" href="{% url 'wszystkie_filmy' %}">Cofnij</button>
+            <button type="submit" class="btn btn-primary" name="get_all_videos">Pobierz</button>
+            <button type="submit" class="btn btn-danger" name="remove_all_videos">Usuń bazę!</button>
+        </form>
+        <div>
+            <br>
+            <h1>{{val}}</h1>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+{% endblock %}

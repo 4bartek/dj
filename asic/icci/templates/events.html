@@ -1,0 +1,55 @@
+{% block content %}
+
+<h3>events.HTML</h3>
+
+<h1>opcje: (muszą być w nawiasach)</h1><br> 
+
+x.event_title <br>
+x.coins_id <br>
+x.coins_name<br>
+x.coins_name<br>
+x.coins_symbol <br>
+x.event_description<br>
+x.event_proof<br>
+x.event_source<br>
+x.event_date<br>
+x.event_created_date<br>
+x.event_feed_source<br>
+x.event_is_hot<br>
+x.event_vote_count<br>
+x.event_positive_vote_count<br>
+x.event_percentage<br>
+x.event_event_cat_id<br>
+x.event_event_cat_name<br>
+x.event_tip_symbol<br>
+x.event_tip_adress<br>
+x.event_twitter_account<br><br><br><br>
+
+
+    {% for x in events %}
+                
+        {{x.event_title}} <br>
+        {{x.coins_id}} <br>
+        {{x.coins_name}}<br>
+        {{x.coins_name}}<br>
+        {{x.coins_symbol}} <br>
+        {{x.event_description}}<br>
+        {{x.event_proof}}<br>
+        {{x.event_source}}<br>
+        {{x.event_date}}<br>
+        {{x.event_created_date}}<br>
+        {{x.event_feed_source}}<br>
+        {{x.event_is_hot}}<br>
+        {{x.event_vote_count}}<br>
+        {{x.event_positive_vote_count}}<br>
+        {{x.event_percentage}}<br>
+        {{x.event_event_cat_id}}<br>
+        {{x.event_event_cat_name}}<br>
+        {{x.event_tip_symbol}}<br>
+        {{x.event_tip_adress}}<br>
+        {{x.event_twitter_account}}<br>
+
+        ##########
+
+    {% endfor %}
+{% endblock %}
