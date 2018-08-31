@@ -11,52 +11,29 @@
 	<title>icci</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel='stylesheet' href='http://f.root-disc.pl/unite-gallery.css' type='text/css' />
+    
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/jquery-11.0.min.js'></script>	
-	<script type='text/javascript' src='http://f.root-disc.pl/js/js/unitegallery.min.js'></script>	
-
-	<link rel='stylesheet' href='http://f.root-disc.pl/unite-gallery.css' type='text/css' />
-	
+	<script type='text/javascript' src='http://f.root-disc.pl/js/js/unitegallery.min.js'></script>		
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/ug-theme-grid.js'></script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-  
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
     
 <!-- STYLE -->
 
 <style>
     
    
-  
-/*    
-    
-    .desktop {
-        background-color: #fff;
-        margin-top: 0.1%;
-        margin-right: 0.1%;
-        margin-left: 0.1%;
-        height: 90vh; 
-        border-color: #000 !important;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-     
-        }
 
-   
-
-
-
-
-/*    .panelCard {
-        background-color: #FFF;
-        border-color: #000;
-        border-radius: 15px;
-        }
-
-
-
-    /*  TABLINKS  */
 
 
         .tab button.active {
@@ -150,7 +127,7 @@
   /* <!---------------------- END ----------------------> */  
     
 body {
-    background-color: #205158;
+    background-color: #fff;
     font-family: lato !important;
     font-size: 16px !important;
     max-width: 100%;
@@ -198,7 +175,7 @@ body {
     
 #newsy {
     overflow: auto;
-    height: 70vh;
+    height: 80vh;
     }
     
 
@@ -240,12 +217,15 @@ body {
     }
     
     .white {
-        color: #fff;
+        color: #000;
+        margin-top: 1%;
     }   
  
     
     .alert-light{
         color: #000;
+        border-color: #378c98;
+
     }
     
     
@@ -285,6 +265,29 @@ video {
   height: 100px;
   background-color;
 }    
+   
+    
+#gallery{
+        margin-top: 5%;
+    }    
+    
+    
+    .buttony{
+        margin-top: 5%;
+        
+    }       
+
+        .buttonyM{
+        margin-bottom: 2%;
+        
+    }       
+
+        
+    .card {
+        border-color: #378c98;
+        
+    }
+     
     
     
 </style>  
@@ -306,46 +309,27 @@ video {
 
 
     
-<div class="container-fluid">
+<div id="a1" class="tabcontent" class="container-fluid" class="panelSterowania" white>
     <div class="row">
-    
-        <div id="a1" class="tabcontent" class="container-fluid" white>
-                    
-                    
-                    <div class="row panelSterowania">
-    
-                        <!-- ROW -->
- 
-                        
-                        <div class="col-md-2">
-                            
-                            <div class="container">
-                            
-                                <div class="row">
-                                
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Kryptoraport</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Szczepan Bentyn</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Mike Satoshi</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">DoradcaTV</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                
+                <div class="col buttony">              
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Kryptoraport</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Szczepan Bentyn</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Inpay</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Mike Satoshi</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">DoradcaTv</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Trading Jam</button><br>
+                                        <button type="button" class="buttonyM btn btn-block btn-light">Cyfrowa Ekonomia</button><br>
 
-                                
-                                </div>                             
-                            </div>  
-                        </div>                          
-                                                
 
-                        
-                    <div class="col-md-8">
-                        <div class="flex-container">
-                            <div class="inner-element">
-x
-                        <div class="galleryBase">
-                            <div id="gallery">
+
+
+                </div>
+
+                
+        
+                <div class="col-8 gallery">
+                    <div id="gallery">
                                 
                                         <img 
                                          src="images/thumbs/thumb1.jpg"
@@ -357,79 +341,29 @@ x
                                         data-videoid="{{x.videoID}}"
                                         >
                                         {% endfor %} 
-                            </div>
-                        </div>   
-                    </div></div></div>
-                        
-                                       
-                        
-                        <div class="col-md-2">
-                            
-                            <div class="container">
-                            
-                                <div class="row">
-                                
-                                        <div class="col" div id="newsy">
-                                            
-                                            
-                                            {% for x in rss_feeds %}
-                                            <div class="alert alert-primary" role="alert">
-                                            {{x.rss_feed_title}}    
-                                            </div>
-                                            {% endfor %}
-                                      
-                                        </div>
-                                
-                                   
-                                
-                                </div>                             
-                            </div>  
-                        </div>  
-                        
-                        <!-- END ROW -->
-                        
-                    </div>
-            
-            
-                    <div class="row" div id="sterownik">
-            
-            
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
-                                </div>
-
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
-                                </div>
-
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
-                                </div>
-            
                     </div>    
-            
-            
-            
-        </div>    
+                </div>
+
         
         
-        
-        
+                <div class="col">
+                                        
+                </div>
+     
+    </div>        
+</div>        
+ 
         
 <!--                            A2          ----------                     -->
         
 
         
-        <div id="a2" class="tabcontent" class="container-fluid" white>
-                    
-                    
-                    <div class="row panelSterowania">
-    
-                        <!-- ROW -->
-  
-                        
-                    <div class="col-md-6">
-                        
+<div id="a2" class="tabcontent" class="container-fluid" class="panelSterowania" white>
+    <div class="row">
+      
+                    <div class="col-md-8">
+                        <div class="container">
+
                             <div class="row">
                                 
                     
@@ -491,17 +425,15 @@ x
                                         </div>
                                 
                                    
-                                
+                                                    </div>
                             </div>  
                         
                         
                         
                     </div>
                         
-                    <div class="col-md-6">
-                            
-                            <div class="container">
-                            
+                    <div class="col-md-4">
+                        <div class="container">
                                 <div class="row">
                                 
                                         <div class="col" div id="newsy">
@@ -512,7 +444,7 @@ x
                                             {% for x in rss_feeds %}
                                             <div class="alert alert-light" role="alert">
                                             {{x.rss_feed_title}}    
-                                            </div>
+                                                </p>{{x.rss_feed_description}}  </p>                                         </div>
                                             {% endfor %}
                                       
                                         </div>
@@ -521,65 +453,28 @@ x
                                 
                                 </div>                             
                             </div>  
-                        </div>                
+                    </div>                
                         
                         
-                       
-                        
-<!--                            A3          ----------                     -->
-      
-                        
-                        
-                        
-                                  
-                        
-                        
-                        
-                        
-                        <!-- END ROW -->
-                        
+    
                     </div>
             
             
-                    <div class="row" div id="sterownik">
-            
-            
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
-                                </div>
-
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
-                                </div>
-
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
-                                </div>
-            
-                    </div>    
+     
             
             
             
         </div>    
         
         
-        <div id="a3" class="tabcontent" class="container-fluid" white>
-                    
-                    
-                    <div class="row panelSterowania">
-    
-                        <!-- ROW -->
+<div id="a3" class="tabcontent" class="container-fluid" class="panelSterowania" white>
+                    <div class="row ">
                         
-
                         <div class="col-md-4">
-                            
                             <div class="container">
-                            
                                 <div class="row">
-                                
-                                        <div class="col" div id="wykres">
-                                            
-                                                               <script type="text/javascript">
+                                    <div class="col" div id="wykres">
+                                        <script type="text/javascript">
                                                 baseUrl = "https://widgets.cryptocompare.com/";
                                                 var scripts = document.getElementsByTagName("script");
                                                 var embedder = scripts[ scripts.length - 1 ];
@@ -593,47 +488,33 @@ x
                                                 s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
                                                 embedder.parentNode.appendChild(s);
                                                 })();
-                                                </script>
-	
-                                      
-                                        </div>
-                                
-                                   
-                                
+                                        </script>
+                                    </div>
                                 </div>                             
                             </div>  
                         </div> 
                         
-                    <div class="col-md-8">
-                        
-                        <div class="container">
-                            
+                        <div class="col-md-8">
+                            <div class="container">
                                 <div class="row">
-                                
-                                        <div class="col" div id="newsy">
-    
-                                            <table id="table_id" class="display">
-                                                                                        
-                                                <thead>
-                                                    <tr>
-                                                        <th>Waluta</th>
-                                                        <th>Nazwa</th>
-                                                        <th>Symbol</th>
-                                                        <th>Cena USD</th>
-                                                        <th>Cena PLN</th>
-                                                        <th>Katpializacja</th>
-                                                        <th>Wolumen</th>
-                                                        <th>Zmiana 24h</th>
-                                                        <th>Zmiana 7d</th>
-
-
-
-                                                    </tr>
-                                                </thead>
+                                    <div class="col" div id="newsy">
+                                        <table id="table_id" class="display">
+                                            <thead>
+                                                <tr>
+                                                    <th>Waluta</th>
+                                                    <th>Nazwa</th>
+                                                    <th>Symbol</th>
+                                                    <th>Cena USD</th>
+                                                    <th>Cena PLN</th>
+                                                    <th>Katpializacja</th>
+                                                    <th>Wolumen</th>
+                                                    <th>Zmiana 24h</th>
+                                                    <th>Zmiana 7d</th>
+                                                </tr>
+                                            </thead>
                                                 
                                                 <tbody>
                                                 {% for x in coinmarketcap %}
-
                                                 <tr>
                                                     <td>{{x.cmc_coin_id}}</td>
                                                     <td>{{x.cmc_name}}</td>
@@ -645,19 +526,15 @@ x
                                                     <td>{{x.cmc_percent_change_24h}}</td>
                                                     <td>{{x.cmc_percent_change_7d}}</td>
 
-
                                                 </tr>
                                                         {% endfor %}
 
-                                                </tbody>
-                                                </table>
-
-                                            
-                                            
-                                </div>   
-                            </div>  
-                        </div>     
-                    </div>
+                                            </tbody>
+                                        </table>
+                                    </div>   
+                                </div>  
+                            </div>     
+                        </div>
                         
                                        
                         
@@ -672,33 +549,32 @@ x
                     </div>
             
             
+
+            
+            
+        </div>    
+  
+    
+    
+    
+             
                     <div class="row" div id="sterownik">
             
             
                         <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
                                 </div>
 
                         <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
                                 </div>
 
                         <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
+                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
                                 </div>
             
                     </div>    
-            
-            
-            
-        </div>    
-        
-    </div>
-</div>    
-    
-    
-    
-    
+               
     
  
     
