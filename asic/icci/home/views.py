@@ -64,7 +64,7 @@ def home(request):
         'filmy1': video[0:14], 
         'rss_feeds': rss_feeds[3:37],       
         'coinmarketcap': coinmarketcap[2:12],
-        'coinmarketcap1': cmc_BTC,      
+        'coinmarketcap1': cmc_BTC[0:40],      
         })
 
 

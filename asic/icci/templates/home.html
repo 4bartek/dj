@@ -19,24 +19,18 @@
 	<link rel='stylesheet' href='http://f.root-disc.pl/unite-gallery.css' type='text/css' />
 	
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/ug-theme-grid.js'></script>
-	
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     
 <!-- STYLE -->
 
 <style>
     
-    body {
-        background-color: #205158;
-        font-family: lato !important;
-        font-size: 16px !important;
-        }
-
-    .container-fluid {
-        padding-right: 0px; 
-        padding-left: 0px; 
-        
-    }
-
+   
+  
+/*    
+    
     .desktop {
         background-color: #fff;
         margin-top: 0.1%;
@@ -49,16 +43,12 @@
      
         }
 
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;   
-        }
+   
 
 
 
 
-
-    .panelCard {
+/*    .panelCard {
         background-color: #FFF;
         border-color: #000;
         border-radius: 15px;
@@ -122,18 +112,9 @@
          padding-left: 5px;
     }
     
-    .kartaMenu {
-        background-color: #378c98;
-        color: #fff;
-        text-align: center;
-        border-color: #000 !important;
-        border-radius: 5px;
-        padding: 1% 7%;
-        margin: 0% 0.05%;
-        width: 33.2%;
-    
 
-    }
+  
+/*    
     
     .zagiecieP {
     border-bottom-right-radius: 225px;
@@ -144,7 +125,7 @@
     }
     
     
-
+/*
     
     .monitor {
         margin-top: 2%;
@@ -158,127 +139,570 @@
         background-color: #205158;
     }
     
-    .galleryBase { 
-        margin-top: 15%;
+
+    */
+    
+    
+    
+    
+    
+    
+  /* <!---------------------- END ----------------------> */  
+    
+body {
+    background-color: #205158;
+    font-family: lato !important;
+    font-size: 16px !important;
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+   
+.row {
+        margin-left: 0px;
+        margin-right: 0px;   
+    
+    }
+
+.container-fluid {
+        padding-right: 0px; 
+        padding-left: 0px; 
         
+    }
+
+
+.kartaMenu {
+    background-color: #378c98;
+    color: #fff;
+    text-align: center;
+    border-color: #000 !important;
+    border-radius: 5px;
+    padding: 1% 7%;
+    margin: 0% 0.05%;
+    width: 33.2%;
+    }
+    
+.galleryBase { 
+    margin-top: 5%;
+    width: 100vh;
+    } 
+    
+    
+.panelSterowania {
+    margin: 1%;
+    padding: 1%;
+    height: 80vh; 
+    border-color: #000 !important;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    }    
+    
+#newsy {
+    overflow: auto;
+    height: 70vh;
+    }
+    
+
+
+#sterownik {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    background-color: #f5f5f5;
+}
+    
+.alert-primary {
+    color: #000;
+    background-color: #93D5DE;
+    border-color: #b8daff;
+}
+    
+    
+.zdjecie {
+    margin-left: 12%;
+    margin-top: 12%;
+    height: auto; 
+    width: auto; 
+    max-width: 75px; 
+    max-height: 125px;
+}
+     
+    .btn-primary {
+        background-color: #fff;
+        border-color: rgb(83,210,229,0.2);
+        color: #000;
+;
+    } 
+    
+    .a {
+        
+        background-color: #fff;
+    }
+    
+    .white {
+        color: #fff;
+    }   
+ 
+    
+    .alert-light{
+        color: #000;
     }
     
     
     
+    .sorting_1 {
+        
+        background-color: aqua;
+    }
+    
+    
+    #wykres {
+        margin-top: 7%;
+    }
+    
+    
+video {
+    display: block;
+    margin: 0 auto;
+}    
+   
+.flex-container{
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: 400px;
+  height: 200px;
+  background-color;
+}
+
+.inner-element{
+  width: 100px;
+  height: 100px;
+  background-color;
+}    
     
     
 </style>  
-
 </head>
     
     
     
-<!---------------------- END ---------------------->
 
+    
+
+    
     
     
 <!-- BODY -->
 
 	
 <body>
-
     
 
-   
+
     
-    
-    
-    
-    
-    
-    
-<!-- INTERFACE -->        
-    
-<div class="desktop"> 
+<div class="container-fluid">
     <div class="row">
-        <div class="monitor">
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">  
-                    
-                    <div class="col-md-6">
-                        
-                        adsadas
-                        
-                        
-                    </div>    
-                    
-                    <div class="col-md-6">
-                        
-                        dsadas
-                        
-                        
-                        
-                    </div>
-                
+    
+        <div id="a1" class="tabcontent" class="container-fluid" white>
                     
                     
-                </div>
-                
-            <div class="col-md-6">
-                
-                <div class="galleryBase">
+                    <div class="row panelSterowania">
+    
+                        <!-- ROW -->
+ 
+                        
+                        <div class="col-md-2">
+                            
+                            <div class="container">
+                            
+                                <div class="row">
+                                
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Kryptoraport</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Szczepan Bentyn</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Mike Satoshi</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">DoradcaTV</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+
+                                
+                                </div>                             
+                            </div>  
+                        </div>                          
+                                                
+
+                        
+                    <div class="col-md-8">
+                        <div class="flex-container">
+                            <div class="inner-element">
+x
+                        <div class="galleryBase">
                             <div id="gallery">
                                 
-                                <img 
-			 src="images/thumbs/thumb1.jpg"
-			 data-image="https://images.unsplash.com/photo-1512325525506-d15b8e5866e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c9669670ffeed2cb29a094049518cd1&auto=format&fit=crop&w=1409&q=80"
-			 >
-                                    {% for x in filmy1 %}
+                                        <img 
+                                         src="images/thumbs/thumb1.jpg"
+                                         data-image="https://images.unsplash.com/photo-1512325525506-d15b8e5866e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c9669670ffeed2cb29a094049518cd1&auto=format&fit=crop&w=1409&q=80"
+                                         >
+                                        {% for x in filmy1 %}
                                         <img alt="Youtube Video"
                                         data-type="youtube"
                                         data-videoid="{{x.videoID}}"
                                         >
-                                    {% endfor %} 
-                                </div>
+                                        {% endfor %} 
+                            </div>
+                        </div>   
+                    </div></div></div>
+                        
+                                       
+                        
+                        <div class="col-md-2">
+                            
+                            <div class="container">
+                            
+                                <div class="row">
+                                
+                                        <div class="col" div id="newsy">
+                                            
+                                            
+                                            {% for x in rss_feeds %}
+                                            <div class="alert alert-primary" role="alert">
+                                            {{x.rss_feed_title}}    
+                                            </div>
+                                            {% endfor %}
+                                      
+                                        </div>
+                                
+                                   
+                                
+                                </div>                             
+                            </div>  
+                        </div>  
+                        
+                        <!-- END ROW -->
+                        
                     </div>
-                </div>
             
-            </div>
-            </div>    
-        </div>  
-    </div>   
-</div>
+            
+                    <div class="row" div id="sterownik">
+            
+            
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                                </div>
 
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
+                                </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-<!-- NAVIGATOR -->        
-    <div class="nawigator">  
-        <div class="container-fluid">
-            <div class="row margines">
-                
-                
-                    <div class="kartaMenu">
-                        <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
-                    </div>
-                
-                    <div class="kartaMenu">
-                        <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
-                    </div>
-           
-                    
-                    <div class="kartaMenu"><img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> </div>
-    
-            </div>
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
+                                </div>
+            
+                    </div>    
+            
+            
+            
         </div>    
-    </div>    
+        
+        
+        
+        
+        
+<!--                            A2          ----------                     -->
+        
+
+        
+        <div id="a2" class="tabcontent" class="container-fluid" white>
+                    
+                    
+                    <div class="row panelSterowania">
+    
+                        <!-- ROW -->
+  
+                        
+                    <div class="col-md-6">
+                        
+                            <div class="row">
+                                
+                    
+                                        <div class="col-md-4" div id="newsy">
+                                            
+                                            <h6><div class="white">ICO LIVE</div></h6>
+                                            
+                                            {% for x in ico_live %}
+                                            
+                                            <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                            <div class="card-body">
+                                            <p class="card-text">{{x.ico_description}}</p>
+                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                            </div>
+                                            </div>
+                                            
+                                            {% endfor %}
+                                      
+                                        </div>
+                            
+                                        <div class="col-md-4" div id="newsy">
+                                            
+                                            <h6><div class="white">ICO UPCOMING</div></h6>
+
+                                            
+                                            
+                                            {% for x in ico_upcoming %}
+                                            
+                                            <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                            <div class="card-body">
+                                            <p class="card-text">{{x.ico_description}}</p>
+                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                            </div>
+                                            </div>
+                                            
+                                            {% endfor %}
+                                      
+                                        </div>
+                            
+                                        <div class="col-md-4" div id="newsy">
+                                            
+                                            <h6><div class="white">ICO FINISHED</div></h6>
+                                            
+                                            
+                                            {% for x in ico_finished %}                    
+                                            
+                                            <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                            <div class="card-body">
+                                            <p class="card-text">{{x.ico_description}}</p>
+                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                            </div>
+                                            </div>
+                                            
+                                            {% endfor %}
+                                      
+                                        </div>
+                                
+                                   
+                                
+                            </div>  
+                        
+                        
+                        
+                    </div>
+                        
+                    <div class="col-md-6">
+                            
+                            <div class="container">
+                            
+                                <div class="row">
+                                
+                                        <div class="col" div id="newsy">
+                                            
+                                        <h6><div class="white">NEWS</div></h6>
+
+                                            
+                                            {% for x in rss_feeds %}
+                                            <div class="alert alert-light" role="alert">
+                                            {{x.rss_feed_title}}    
+                                            </div>
+                                            {% endfor %}
+                                      
+                                        </div>
+                                
+                                   
+                                
+                                </div>                             
+                            </div>  
+                        </div>                
+                        
+                        
+                       
+                        
+<!--                            A3          ----------                     -->
+      
+                        
+                        
+                        
+                                  
+                        
+                        
+                        
+                        
+                        <!-- END ROW -->
+                        
+                    </div>
+            
+            
+                    <div class="row" div id="sterownik">
+            
+            
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                                </div>
+
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
+                                </div>
+
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
+                                </div>
+            
+                    </div>    
+            
+            
+            
+        </div>    
+        
+        
+        <div id="a3" class="tabcontent" class="container-fluid" white>
+                    
+                    
+                    <div class="row panelSterowania">
+    
+                        <!-- ROW -->
+                        
+
+                        <div class="col-md-4">
+                            
+                            <div class="container">
+                            
+                                <div class="row">
+                                
+                                        <div class="col" div id="wykres">
+                                            
+                                                               <script type="text/javascript">
+                                                baseUrl = "https://widgets.cryptocompare.com/";
+                                                var scripts = document.getElementsByTagName("script");
+                                                var embedder = scripts[ scripts.length - 1 ];
+                                                (function (){
+                                                var appName = encodeURIComponent(window.location.hostname);
+                                                if(appName==""){appName="local";}
+                                                var s = document.createElement("script");
+                                                s.type = "text/javascript";
+                                                s.async = true;
+                                                var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=USD';
+                                                s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                                embedder.parentNode.appendChild(s);
+                                                })();
+                                                </script>
+	
+                                      
+                                        </div>
+                                
+                                   
+                                
+                                </div>                             
+                            </div>  
+                        </div> 
+                        
+                    <div class="col-md-8">
+                        
+                        <div class="container">
+                            
+                                <div class="row">
+                                
+                                        <div class="col" div id="newsy">
+    
+                                            <table id="table_id" class="display">
+                                                                                        
+                                                <thead>
+                                                    <tr>
+                                                        <th>Waluta</th>
+                                                        <th>Nazwa</th>
+                                                        <th>Symbol</th>
+                                                        <th>Cena USD</th>
+                                                        <th>Cena PLN</th>
+                                                        <th>Katpializacja</th>
+                                                        <th>Wolumen</th>
+                                                        <th>Zmiana 24h</th>
+                                                        <th>Zmiana 7d</th>
+
+
+
+                                                    </tr>
+                                                </thead>
+                                                
+                                                <tbody>
+                                                {% for x in coinmarketcap %}
+
+                                                <tr>
+                                                    <td>{{x.cmc_coin_id}}</td>
+                                                    <td>{{x.cmc_name}}</td>
+                                                    <td>{{x.cmc_symbol}}</td>
+                                                    <td>{{x.cmc_price_usd}}</td>
+                                                    <td>{{x.cmc_price_pln}}</td>
+                                                    <td>{{x.cmc_capitalization_pln}}</td>
+                                                    <td>{{x.cmc_volume_usd_24h}}</td>
+                                                    <td>{{x.cmc_percent_change_24h}}</td>
+                                                    <td>{{x.cmc_percent_change_7d}}</td>
+
+
+                                                </tr>
+                                                        {% endfor %}
+
+                                                </tbody>
+                                                </table>
+
+                                            
+                                            
+                                </div>   
+                            </div>  
+                        </div>     
+                    </div>
+                        
+                                       
+                        
+
+      
+                        
+                        
+                        
+                        
+                        <!-- END ROW -->
+                        
+                    </div>
+            
+            
+                    <div class="row" div id="sterownik">
+            
+            
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                                </div>
+
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
+                                </div>
+
+                        <div class="kartaMenu">
+                                <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
+                                </div>
+            
+                    </div>    
+            
+            
+            
+        </div>    
+        
+    </div>
+</div>    
+    
+    
+    
+    
+    
  
     
-    
+ 
 
     <!-- SCRIPTS -->	
 				
@@ -339,14 +763,19 @@
 
 		});
 		
+                            
+                            
+        $(document).ready( function () {
+    $('#table_id').DataTable();
+} );                    
+                            
 	</script>
 
-                
-	
+ 
 </body>
 </html>
     
-
+<!--
 
 <div class="col">
                         <div id="a1" class="tabcontent">
@@ -817,6 +1246,155 @@ x.rss_feed_source <br>
     
     
     
+    
+    
+    
+    <style>
+    /*
+    .container-fluid {
+        padding-right: 0px; 
+        padding-left: 0px; 
+        
+    }
+
+    
+    /*
+    .desktop {
+        background-color: #fff;
+        margin-top: 0.1%;
+        margin-right: 0.1%;
+        margin-left: 0.1%;
+        height: 90vh; 
+        border-color: #000 !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+     
+        }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;   
+        }
+
+    
+
+
+
+    .panelCard {
+        background-color: #FFF;
+        border-color: #000;
+        border-radius: 15px;
+        }
+
+    
+    */
+
+
+    /*  TABLINKS  */
+
+
+        .tab button.active {
+            background-color: #4ec6d8;
+            width: 100%;
+            box-shadow: 2px 2px 15px #378c98;
+            /*box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5) inset;*/
+            border: 0px;
+
+        }
+
+        .tablinks {
+            width: 100%;
+            height: 75px;
+            margin: 2%;
+            background-color: #378c98;
+            box-shadow: 2px 2px 15px #378c98;
+            border: 0px;
+            padding: 0;
+            border-radius: 15px;
+
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 0px 0px;
+            border: 0px solid #ccc;
+            border-top: none;
+        }
+
+
+
+    /*  SLIDE  */
+
+
+        #panel1, #panel2, #panel3, #flip1, #flip2, #flip3 {
+            padding: 5px;
+            text-align: center;
+        }
+
+        #panel1, #panel2, #panel3 {
+            width: 100%;
+            padding: 5px;
+            display: none;
+        }
+
+    
+    
+    /*
+
+    
+    .noPadding {
+         padding-right: 5px;
+         padding-left: 5px;
+    }
+    
+    .kartaMenu {
+        background-color: #378c98;
+        color: #fff;
+        text-align: center;
+        border-color: #000 !important;
+        border-radius: 5px;
+        padding: 1% 7%;
+        margin: 0% 0.05%;
+        width: 33.2%;
+    
+
+    }
+    
+    .zagiecieP {
+    border-bottom-right-radius: 225px;
+    }
+    
+    .zagiecieL {
+        border-bottom-right-radius: 225px;
+    }
+    
+    
+
+    
+    .monitor {
+        margin-top: 2%;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        height: 80vh;
+        width: 100%;
+        border-radius: 5px;
+      
+        background-color: #205158;
+    }
+    
+    .galleryBase { 
+        margin-top: 15%;
+        
+    }
+    
+    
+    
+    */
+    
+    
+    
+  /* <!---------------------- END ----------------------> */  
     
     
     
