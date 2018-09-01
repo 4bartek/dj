@@ -8,6 +8,7 @@
 <!-- BASE -->
     
 	<meta charset="UTF-8">
+    
 	<title>icci</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -15,6 +16,7 @@
     <link rel='stylesheet' href='http://f.root-disc.pl/unite-gallery.css' type='text/css' />
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/jquery-11.0.min.js'></script>	
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/unitegallery.min.js'></script>		
 	<script type='text/javascript' src='http://f.root-disc.pl/js/js/ug-theme-grid.js'></script>
@@ -28,103 +30,14 @@
     
     
     
-<!-- STYLE -->
+<!-- ---------------------- STYLE ---------------------- -->
 
 <style>
     
    
 
-
-
-        .tab button.active {
-            background-color: #4ec6d8;
-            width: 100%;
-            box-shadow: 2px 2px 15px #378c98;
-            /*box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5) inset;*/
-            border: 0px;
-
-        }
-
-        .tablinks {
-            width: 100%;
-            height: 75px;
-            margin: 2%;
-            background-color: #378c98;
-            box-shadow: 2px 2px 15px #378c98;
-            border: 0px;
-            padding: 0;
-            border-radius: 15px;
-
-        }
-
-        .tabcontent {
-            display: none;
-            padding: 0px 0px;
-            border: 0px solid #ccc;
-            border-top: none;
-        }
-
-
-
-    /*  SLIDE  */
-
-
-        #panel1, #panel2, #panel3, #flip1, #flip2, #flip3 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        #panel1, #panel2, #panel3 {
-            width: 100%;
-            padding: 5px;
-            display: none;
-        }
-
     
     
-
-    
-    .noPadding {
-         padding-right: 5px;
-         padding-left: 5px;
-    }
-    
-
-  
-/*    
-    
-    .zagiecieP {
-    border-bottom-right-radius: 225px;
-    }
-    
-    .zagiecieL {
-        border-bottom-right-radius: 225px;
-    }
-    
-    
-/*
-    
-    .monitor {
-        margin-top: 2%;
-        margin-left: 5px;
-        margin-right: 5px;
-
-        height: 80vh;
-        width: 100%;
-        border-radius: 5px;
-      
-        background-color: #205158;
-    }
-    
-
-    */
-    
-    
-    
-    
-    
-    
-  /* <!---------------------- END ----------------------> */  
     
 body {
     background-color: #fff;
@@ -145,7 +58,28 @@ body {
         padding-left: 0px; 
         
     }
+       
+  
+.flex-container{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 200px;
+    background-color;
+    }    
+    
+    
+.noPadding {
+         padding-right: 5px;
+         padding-left: 5px;
+    }
+    
 
 .kartaMenu {
     background-color: #378c98;
@@ -156,7 +90,12 @@ body {
     padding: 1% 7%;
     margin: 0% 0.05%;
     width: 33.2%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
     }
+  
     
 .galleryBase { 
     margin-top: 5%;
@@ -173,27 +112,18 @@ body {
     border-top-right-radius: 25px;
     }    
     
-#newsy {
-    overflow: auto;
-    height: 80vh;
-    }
     
+.card {
+    border-color: #378c98;
+    }   
 
-
-#sterownik {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-
-    background-color: #f5f5f5;
-}
     
-.alert-primary {
-    color: #000;
-    background-color: #93D5DE;
-    border-color: #b8daff;
-}
-    
+.btn-primary {
+        background-color: #fff;
+        border-color: rgb(83,210,229,0.2);
+        color: #000;
+    }     
+  
     
 .zdjecie {
     margin-left: 12%;
@@ -202,69 +132,55 @@ body {
     width: auto; 
     max-width: 75px; 
     max-height: 125px;
-}
-     
-    .btn-primary {
-        background-color: #fff;
-        border-color: rgb(83,210,229,0.2);
-        color: #000;
-;
+    }    
+    
+.alert-primary {
+    color: #000;
+    background-color: #93D5DE;
+    border-color: #b8daff;
     } 
     
-    .a {
-        
-        background-color: #fff;
+.a {    
+    background-color: #fff;
     }
+
     
-    .white {
-        color: #000;
-        margin-top: 1%;
+.white {
+    color: #000;
+    margin-top: 1%;
     }   
  
     
-    .alert-light{
-        color: #000;
-        border-color: #378c98;
+.alert-light{
+    color: #000;
+    border-color: #378c98;
+    }
+    
+    
+.sorting_1 {
+    background-color: aqua;
+    }
+    
+.buttony{
+        margin-top: 5%;   
+    }       
 
-    }
+.buttonyM{
+        margin-bottom: 2%;   
+    }       
     
-    
-    
-    .sorting_1 {
-        
-        background-color: aqua;
-    }
-    
-    
-    #wykres {
-        margin-top: 7%;
-    }
-    
-    
+
 video {
     display: block;
     margin: 0 auto;
-}    
-   
-.flex-container{
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  
-  justify-content: center;
-  align-items: center;
-  
-  width: 400px;
-  height: 200px;
-  background-color;
-}
+    }    
+ 
 
 .inner-element{
   width: 100px;
   height: 100px;
   background-color;
-}    
+    }    
    
     
 #gallery{
@@ -272,25 +188,23 @@ video {
     }    
     
     
-    .buttony{
-        margin-top: 5%;
-        
-    }       
-
-        .buttonyM{
-        margin-bottom: 2%;
-        
-    }       
-
-        
-    .card {
-        border-color: #378c98;
-        
+#wykres {
+        margin-top: 7%;
     }
      
     
+#newsy {
+    overflow: auto;
+    height: 80vh;
+    }
     
+
+    
+
+
+
 </style>  
+
 </head>
     
     
@@ -301,278 +215,291 @@ video {
     
     
     
-<!-- BODY -->
+<!-- ---------------------- BODY ---------------------- -->
 
 	
 <body>
     
-
-
     
-<div id="a1" class="tabcontent" class="container-fluid" class="panelSterowania" white>
-    <div class="row">
-                
-                <div class="col buttony">              
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Kryptoraport</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Szczepan Bentyn</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Inpay</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Mike Satoshi</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">DoradcaTv</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Trading Jam</button><br>
-                                        <button type="button" class="buttonyM btn btn-block btn-light">Cyfrowa Ekonomia</button><br>
+    
+    
+    
+<div class="tab-content" id="myTabContent">
+    
 
+<!-- ---------------------- A1 MODUŁ HOME INTERFACE ---------------------- -->
+<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...
 
-
-
-                </div>
-
-                
-        
-                <div class="col-8 gallery">
-                    <div id="gallery">
-                                
-                                        <img 
-                                         src="images/thumbs/thumb1.jpg"
-                                         data-image="https://images.unsplash.com/photo-1512325525506-d15b8e5866e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c9669670ffeed2cb29a094049518cd1&auto=format&fit=crop&w=1409&q=80"
-                                         >
-                                        {% for x in filmy1 %}
-                                        <img alt="Youtube Video"
-                                        data-type="youtube"
-                                        data-videoid="{{x.videoID}}"
-                                        >
-                                        {% endfor %} 
-                    </div>    
-                </div>
-
-        
-        
-                <div class="col">
-                                        
-                </div>
-     
-    </div>        
-</div>        
- 
-        
-<!--                            A2          ----------                     -->
-        
-
-        
-<div id="a2" class="tabcontent" class="container-fluid" class="panelSterowania" white>
-    <div class="row">
+<div class="container">
+  <div class="row">
+    
       
-                    <div class="col-md-8">
-                        <div class="container">
+      
+    <div class="col-sm">
 
-                            <div class="row">
-                                
-                    
-                                        <div class="col-md-4" div id="newsy">
-                                            
-                                            <h6><div class="white">ICO LIVE</div></h6>
-                                            
-                                            {% for x in ico_live %}
-                                            
-                                            <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
-                                            <div class="card-body">
-                                            <p class="card-text">{{x.ico_description}}</p>
-                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
-                                            </div>
-                                            </div>
-                                            
-                                            {% endfor %}
-                                      
-                                        </div>
-                            
-                                        <div class="col-md-4" div id="newsy">
-                                            
-                                            <h6><div class="white">ICO UPCOMING</div></h6>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="ahome-tab" data-toggle="tab" href="#ahome" role="tab" aria-controls="ahome" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="aprofile-tab" data-toggle="tab" href="#aprofile" role="tab" aria-controls="aprofile" aria-selected="false">Profile</a>
+          </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="ahome" role="tabpanel" aria-labelledby="ahome-tab">
+            
+                    <div class="container">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="bhome-tab" data-toggle="tab" href="#bhome" role="tab" aria-controls="bhome" aria-selected="true">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="bprofile-tab" data-toggle="tab" href="#bprofile" role="tab" aria-controls="bprofile" aria-selected="false">Profile</a>
+                          </li>
+                        </ul>
 
-                                            
-                                            
-                                            {% for x in ico_upcoming %}
-                                            
-                                            <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
-                                            <div class="card-body">
-                                            <p class="card-text">{{x.ico_description}}</p>
-                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
-                                            </div>
-                                            </div>
-                                            
-                                            {% endfor %}
-                                      
-                                        </div>
-                            
-                                        <div class="col-md-4" div id="newsy">
-                                            
-                                            <h6><div class="white">ICO FINISHED</div></h6>
-                                            
-                                            
-                                            {% for x in ico_finished %}                    
-                                            
-                                            <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
-                                            <div class="card-body">
-                                            <p class="card-text">{{x.ico_description}}</p>
-                                            <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
-                                            </div>
-                                            </div>
-                                            
-                                            {% endfor %}
-                                      
-                                        </div>
-                                
-                                   
-                                                    </div>
-                            </div>  
-                        
-                        
-                        
-                    </div>
-                        
-                    <div class="col-md-4">
-                        <div class="container">
-                                <div class="row">
-                                
-                                        <div class="col" div id="newsy">
-                                            
-                                        <h6><div class="white">NEWS</div></h6>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="bhome" role="tabpanel" aria-labelledby="bhome-tab">aaa</div>
+                          <div class="tab-pane fade" id="bprofile" role="tabpanel" aria-labelledby="bprofile-tab">bbb</div>
+                        </div>                
 
-                                            
-                                            {% for x in rss_feeds %}
-                                            <div class="alert alert-light" role="alert">
-                                            {{x.rss_feed_title}}    
-                                                </p>{{x.rss_feed_description}}  </p>                                         </div>
-                                            {% endfor %}
-                                      
-                                        </div>
-                                
-                                   
-                                
-                                </div>                             
-                            </div>  
-                    </div>                
-                        
-                        
+                    </div>            
+            
+            
+            </div>
+          <div class="tab-pane fade" id="aprofile" role="tabpanel" aria-labelledby="aprofile-tab">b</div>
+        </div>        
+        
+        
+        
+        
+    </div>
+      
+      
+      
+    <div class="col-sm">
+      One of three columns
+    </div>
+      
+      
+      
+    <div class="col-sm">
+      One of three columns
+    </div>
+      
+      
+      
+  </div>
+</div>
+
+      
+      
+      
+</div>
     
-                    </div>
-            
-            
-     
-            
-            
-            
+
+<!-- ---------------------- A2 MODUŁ MEGAFON INTERFACE ---------------------- -->
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2
+
+            <div class="row">
+                            <div class="col-md-8">
+                                <div class="container">
+                                    <div class="row">
+
+
+                                                <div class="col-md-4" div id="newsy">
+
+                                                    <h6><div class="white">ICO LIVE</div></h6>
+
+                                                    {% for x in ico_live %}
+
+                                                    <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                                    <div class="card-body">
+                                                    <p class="card-text">{{x.ico_description}}</p>
+                                                    <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                                    </div>
+                                                    </div>
+
+                                                    {% endfor %}
+
+                                                </div>
+
+                                                <div class="col-md-4" div id="newsy">
+
+                                                    <h6><div class="white">ICO UPCOMING</div></h6>
+
+
+
+                                                    {% for x in ico_upcoming %}
+
+                                                    <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                                    <div class="card-body">
+                                                    <p class="card-text">{{x.ico_description}}</p>
+                                                    <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                                    </div>
+                                                    </div>
+
+                                                    {% endfor %}
+
+                                                </div>
+
+                                                <div class="col-md-4" div id="newsy">
+
+                                                    <h6><div class="white">ICO FINISHED</div></h6>
+
+
+                                                    {% for x in ico_finished %}                    
+
+                                                    <div class="card" style="width: 18rem;">
+                                                    <img class="card-img-top zdjecie" src="{{x.ico_img}}" alt="Card image cap">
+                                                    <div class="card-body">
+                                                    <p class="card-text">{{x.ico_description}}</p>
+                                                    <a href="{{x.ico_website_link}}" class="btn btn-primary">Link</a>
+                                                    </div>
+                                                    </div>
+
+                                                    {% endfor %}
+
+                                                </div>
+
+
+                                    </div>
+                                </div>  
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col" div id="newsy">
+                                            <h6><div class="white">NEWS</div></h6>
+
+                                                    {% for x in rss_feeds %}
+                                                    <div class="alert alert-light" role="alert">
+                                                    {{x.rss_feed_title}}    
+                                                        </p>{{x.rss_feed_description}}  </p>
+                                                    </div>
+                                                    {% endfor %}
+
+                                        </div>
+                                    </div>                             
+                                </div>  
+                            </div>                
+
+
+
+            </div>
         </div>    
         
-        
-<div id="a3" class="tabcontent" class="container-fluid" class="panelSterowania" white>
-                    <div class="row ">
-                        
-                        <div class="col-md-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col" div id="wykres">
-                                        <script type="text/javascript">
-                                                baseUrl = "https://widgets.cryptocompare.com/";
-                                                var scripts = document.getElementsByTagName("script");
-                                                var embedder = scripts[ scripts.length - 1 ];
-                                                (function (){
-                                                var appName = encodeURIComponent(window.location.hostname);
-                                                if(appName==""){appName="local";}
-                                                var s = document.createElement("script");
-                                                s.type = "text/javascript";
-                                                s.async = true;
-                                                var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=USD';
-                                                s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                                embedder.parentNode.appendChild(s);
-                                                })();
-                                        </script>
-                                    </div>
-                                </div>                             
-                            </div>  
-                        </div> 
-                        
-                        <div class="col-md-8">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col" div id="newsy">
-                                        <table id="table_id" class="display">
-                                            <thead>
-                                                <tr>
-                                                    <th>Waluta</th>
-                                                    <th>Nazwa</th>
-                                                    <th>Symbol</th>
-                                                    <th>Cena USD</th>
-                                                    <th>Cena PLN</th>
-                                                    <th>Katpializacja</th>
-                                                    <th>Wolumen</th>
-                                                    <th>Zmiana 24h</th>
-                                                    <th>Zmiana 7d</th>
-                                                </tr>
-                                            </thead>
-                                                
-                                                <tbody>
-                                                {% for x in coinmarketcap %}
-                                                <tr>
-                                                    <td>{{x.cmc_coin_id}}</td>
-                                                    <td>{{x.cmc_name}}</td>
-                                                    <td>{{x.cmc_symbol}}</td>
-                                                    <td>{{x.cmc_price_usd}}</td>
-                                                    <td>{{x.cmc_price_pln}}</td>
-                                                    <td>{{x.cmc_capitalization_pln}}</td>
-                                                    <td>{{x.cmc_volume_usd_24h}}</td>
-                                                    <td>{{x.cmc_percent_change_24h}}</td>
-                                                    <td>{{x.cmc_percent_change_7d}}</td>
+<!-- ---------------------- A3 MODUŁ WYKRES INTERFACE ---------------------- -->
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
 
-                                                </tr>
-                                                        {% endfor %}
 
-                                            </tbody>
-                                        </table>
-                                    </div>   
+         <div class="row ">
+
+                            <div class="col-md-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col" div id="wykres">
+                                            <script type="text/javascript">
+                                                    baseUrl = "https://widgets.cryptocompare.com/";
+                                                    var scripts = document.getElementsByTagName("script");
+                                                    var embedder = scripts[ scripts.length - 1 ];
+                                                    (function (){
+                                                    var appName = encodeURIComponent(window.location.hostname);
+                                                    if(appName==""){appName="local";}
+                                                    var s = document.createElement("script");
+                                                    s.type = "text/javascript";
+                                                    s.async = true;
+                                                    var theUrl = baseUrl+'serve/v1/coin/chart?fsym=BTC&tsym=USD';
+                                                    s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                                                    embedder.parentNode.appendChild(s);
+                                                    })();
+                                            </script>
+                                        </div>
+                                    </div>                             
                                 </div>  
-                            </div>     
-                        </div>
-                        
-                                       
-                        
+                            </div> 
 
-      
-                        
-                        
-                        
-                        
-                        <!-- END ROW -->
-                        
-                    </div>
-            
-            
+                            <div class="col-md-8">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col" div id="newsy">
+                                            <table id="table_id" class="display">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Waluta</th>
+                                                        <th>Nazwa</th>
+                                                        <th>Symbol</th>
+                                                        <th>Cena USD</th>
+                                                        <th>Cena PLN</th>
+                                                        <th>Katpializacja</th>
+                                                        <th>Wolumen</th>
+                                                        <th>Zmiana 24h</th>
+                                                        <th>Zmiana 7d</th>
+                                                    </tr>
+                                                </thead>
 
-            
-            
+                                                    <tbody>
+                                                    {% for x in coinmarketcap %}
+                                                    <tr>
+                                                        <td>{{x.cmc_coin_id}}</td>
+                                                        <td>{{x.cmc_name}}</td>
+                                                        <td>{{x.cmc_symbol}}</td>
+                                                        <td>{{x.cmc_price_usd}}</td>
+                                                        <td>{{x.cmc_price_pln}}</td>
+                                                        <td>{{x.cmc_capitalization_pln}}</td>
+                                                        <td>{{x.cmc_volume_usd_24h}}</td>
+                                                        <td>{{x.cmc_percent_change_24h}}</td>
+                                                        <td>{{x.cmc_percent_change_7d}}</td>
+
+                                                    </tr>
+                                                            {% endfor %}
+
+                                                </tbody>
+                                            </table>
+                                        </div>   
+                                    </div>  
+                                </div>     
+                            </div>
+            </div>     
         </div>    
   
     
-    
+</div>    
+
+<!-- ----------------------  STEROWNIK - MENU ZARZĄDZAJĄCE DO INTERFACE ---------------------- -->
     
              
                     <div class="row" div id="sterownik">
-            
-            
                         <div class="kartaMenu">
                                 <img src="http://f.root-disc.pl/Ikony/icons8-oddzial-64.png" alt="Smiley face" height="64" width="64" class="margin1" onclick="openCity(event, 'a1')" id="defaultOpen">
+                            
+                            
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                              </li>
+                            </ul>
+
+                            
+                            
+                            
+                            
+                            
+                            
                                 </div>
 
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-megafon-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a2')" id="flip">
-                                </div>
-
-                        <div class="kartaMenu">
-                                <img src="http://f.root-disc.pl/Ikony/icons8-akcje-64.png" alt="Smiley face" height="64" width="64" class="margin1"  onclick="openCity(event, 'a3')" id="flip"> 
-                                </div>
-            
+             
+                      
                     </div>    
                
     
@@ -580,699 +507,97 @@ video {
     
  
 
-    <!-- SCRIPTS -->	
+<!------------------------ SKRYPTY ------------------------->
 				
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="./js/script.js"></script>
-    
-  
-            <!-- TABBED CONTENT -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                    <script src="./js/script.js"></script>
 
-        
-            <script>        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-}
-          
-            // TABBED CONTENT DEFAULT OPEN 
 
-            document.getElementById("defaultOpen").click();
 
-          
-            // SLIDE
-            $(document).ready(function(){
-                $("#flip1").click(function(){
-                    $("#panel1").fadeIn("slow");
-                });
-            });
+<!------------------------ SKRYPT ODPOWIADAJĄCY ZA STEROWNIK ------------------------>
 
-            $(document).ready(function(){
-                $("#flip2").click(function(){
-                    $("#panel2").fadeIn("slow");
-                });
-            });
+                    <script>        
 
-            $(document).ready(function(){
-                $("#flip3").click(function(){
-                    $("#panel3").fadeIn("slow");
-                });
-            });
+                    function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    }
 
-            </script>
+                    // TABBED CONTENT DEFAULT OPEN 
+
+                    document.getElementById("defaultOpen").click();
+                        
+                    </script>
+
                 
-                		<script type="text/javascript">
+                
+<!------------------------- SKRYPT SLIDER -------------------------> 
+          
+                    <script>        
+                
+                    $(document).ready(function(){
+                        $("#flip1").click(function(){
+                            $("#panel1").fadeIn("slow");
+                        });
+                    });
 
-		jQuery(document).ready(function(){
+                    $(document).ready(function(){
+                        $("#flip2").click(function(){
+                            $("#panel2").fadeIn("slow");
+                        });
+                    });
 
-			jQuery("#gallery").unitegallery();
+                    $(document).ready(function(){
+                        $("#flip3").click(function(){
+                            $("#panel3").fadeIn("slow");
+                        });
+                    });
 
-		});
+                    </script>
+
+
+<!------------------------- SKRYPT GALERIA VIDEO -------------------------> 
+
+                    <script type="text/javascript">
+
+
+                    jQuery(document).ready(function(){
+
+                    jQuery("#gallery").unitegallery();
+
+                    });
 		
-                            
-                            
-        $(document).ready( function () {
-    $('#table_id').DataTable();
-} );                    
-                            
-	</script>
+                    </script>
+                
+      
+<!----------------------- SKRYPT X ---------------------- --> 
+                
+                    <script type="text/javascript">
+
+                    $(document).ready( function () {
+                    $('#table_id').DataTable();
+                    } );                    
+
+                    </script>
 
  
 </body>
 </html>
     
-<!--
-
-<div class="col">
-                        <div id="a1" class="tabcontent">
-                            <div id="flip1">INFORMACJE
-                            </div>
-
-                            <div id="panel1">INFORMACJE
-                            </div>
-
-                        </div>  
-
-                        <div id="a2" class="tabcontent">
-                            <div id="flip2">rzedze
-                            </div>
-
-                            <div id="panel1">rzedze
-                            </div>
-
-                        </div>      
-
-                        <div id="a3" class="tabcontent">
-                            <div id="flip2">narzedziami
-                            </div>
-
-                            <div id="panel2">narzedziami
-                            </div>
-
-                          </div>  
-                            </div>
-
-
-
-
-
-
-<div class="col-sm-7">
-                <div class="container">                            
-                  <!--  <div id="gallery" style="">
-                        {% for x in filmy1 %}
-                            <img alt="Youtube Video"
-                            data-type="youtube"
-                            data-videoid="{{x.videoID}}"
-                            data-description="You can include youtube videos easily!">
-                        {% endfor %} 
-                    </div> -->
-                </div>
-            </div>
-
-
-
-
-
-
-<!-- 
-
-
-<h1>filmy1</h1>
-{% for x in filmy1 %}
-{{x.author}}  <br>
-{{x.videoID}}  <br>
-{% endfor %}
-
-
-<h1>opcje: (muszą być w nawiasach)</h1><br> 
-
-x.event_title <br>
-x.coins_id <br>
-x.coins_name<br>
-x.coins_name<br>
-x.coins_symbol <br>
-x.event_description<br>
-x.event_proof<br>
-x.event_source<br>
-x.event_date<br>
-x.event_created_date<br>
-x.event_feed_source<br>
-x.event_is_hot<br>
-x.event_vote_count<br>
-x.event_positive_vote_count<br>
-x.event_percentage<br>
-x.event_event_cat_id<br>
-x.event_event_cat_name<br>
-x.event_tip_symbol<br>
-x.event_tip_adress<br>
-x.event_twitter_account<br><br><br><br>
-
-
-<br>
-<br>
-<h1>filmy</h1>
-{% for x in filmy %}
-
-{{x.author}}  <br>
-{{x.icci_cat}} <br>
-{{x.icci_sub_cat}} <br>
-{{x.title}} <br>
-{{x.videoID}}  <br>
-{{x.publishedAt}}  <br>
-{{x.channelId}}  <br>
-{{x.description}}  <br>
-{{x.tags}}  <br>
-{{x.categoryId}}<br>  
-{{x.liveBroadcastContent}}<br>  
-{{x.defaultLanguage}}  <br>
-{{x.duration}}  <br>
-{{x.dimension}} <br>
-{{x.definition}}  <br>
-{{x.caption}}  <br>
-{{x.licensedContent}}<br>  
-{{x.projection}}  <br>
-{{x.viewCount}} <br>
-{{x.likeCount}}  <br>
-{{x.dislikeCount}}  <br>
-{{x.favoriteCount}}  <br>
-{{x.commentCount}}  <br>
-{{x.thumbnails_default}}  <br>
-{{x.thumbnails_medium}}  <br>
-{{x.thumbnails_high}}  <br>
-{{x.thumbnails_standard}}  <br>
-{{x.thumbnails_maxres}}  <br>
-#############
-<br><br>
-{% endfor %}
-
-
-    {% for x in events %}
-                
-        {{x.event_title}} <br>
-        {{x.coins_id}} <br>
-        {{x.coins_name}}<br>
-        {{x.coins_name}}<br>
-        {{x.coins_symbol}} <br>
-        {{x.event_description}}<br>
-        {{x.event_proof}}<br>
-        {{x.event_source}}<br>
-        {{x.event_date}}<br>
-        {{x.event_created_date}}<br>
-        {{x.event_feed_source}}<br>
-        {{x.event_is_hot}}<br>
-        {{x.event_vote_count}}<br>
-        {{x.event_positive_vote_count}}<br>
-        {{x.event_percentage}}<br>
-        {{x.event_event_cat_id}}<br>
-        {{x.event_event_cat_name}}<br>
-        {{x.event_tip_symbol}}<br>
-        {{x.event_tip_adress}}<br>
-        {{x.event_twitter_account}}<br>
-
-        ##########
-
-    {% endfor %}
-
-
-<br><br><br>
-
-ICO.html
-<h1>opcje (muszą być w nawiasach)</h1>
-
-
-x.ico_title <br>
-x.ico_description<br> 
-x.ico_img <br>
-x.ico_website_link<br> 
-x.ico_start_time<br>
-x.ico_end_time <br>
-x.ico_icowatchlist_url<br> 
-x.ico_source <br>
-x.ico_typ <br>
-
-<br><br>
-
-    <div>
-    <h1>ico_live</h1>
-        {% for x in ico_live %}
-            {{x.ico_title}} <br>
-            {{x.ico_description}}<br> 
-            {{x.ico_img}} <br>
-            {{x.ico_website_link}} <br> 
-            {{x.ico_start_time}} <br>
-            {{x.ico_end_time}} <br>
-            {{x.ico_icowatchlist_url}} <br> 
-            {{x.ico_source}} <br>
-            {{x.ico_typ}} <br>
-            <br><br><br>
-        {% endfor %}
-    </div>
-
-    ############################
-    
-    <div>
-    <h1>ico_upcoming</h1> 
-
-        {% for x in ico_upcoming %}
-            {{x.ico_title}} <br>
-            {{x.ico_description}}<br> 
-            {{x.ico_img}} <br>
-            {{x.ico_website_link}} <br> 
-            {{x.ico_start_time}} <br>
-            {{x.ico_end_time}} <br>
-            {{x.ico_icowatchlist_url}} <br> 
-            {{x.ico_source}} <br>
-            {{x.ico_typ}} <br>
-            <br><br><br>
-        {% endfor %}
-    </div>
-
-    ############################
-    
-    <div>
-    <h1>ico_finished</h1> 
-
-
-        {% for x in ico_finished %}                    
-            {{x.ico_title}} <br>
-            {{x.ico_description}}<br> 
-            {{x.ico_img}} <br>
-            {{x.ico_website_link}} <br> 
-            {{x.ico_start_time}} <br>
-            {{x.ico_end_time}} <br>
-            {{x.ico_icowatchlist_url}} <br> 
-            {{x.ico_source}} <br>
-            {{x.ico_typ}} <br>
-            <br><br><br>
-        {% endfor %}
-    </div>
-
-
-
-#rss
-
-<h3>rss_reader - rss_reader.HTML</h3>
-<h1>opcje</h1>
-
-x.rss_feed_title    <br>
-x.rss_feed_description <br>
-x.rss_feed_img <br>
-x.rss_feed_link <br>
-x.rss_feed_published<br> 
-x.rss_feed_source <br>
-
-<br><br>
-
-{% for x in rss_feeds %}
-    {{x.rss_feed_title}}    <br>
-    {{x.rss_feed_description}} <br>
-    {{x.rss_feed_img}} <br>
-    {{x.rss_feed_link}} <br>
-    {{x.rss_feed_published}}<br> 
-    {{x.rss_feed_source}} <br>
-    <br><br><br>
-{% endfor %}
-
 {% endblock %}
 
 
 
 
-
-
-   
-    
-<!-- SCREEN -->    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    <!--
-    
-
-
-
-<div class="skrin">     
-                    <div class="col">
-                        <div id="a1" class="tabcontent">
-                            <div id="flip1">INFORMACJE
-                            </div>
-
-                            <div id="panel1">INFORMACJE
-                            </div>
-
-                        </div>  
-
-                        <div id="a2" class="tabcontent">
-                            <div id="flip2">rzedze
-                            </div>
-
-                            <div id="panel1">rzedze
-                            </div>
-
-                        </div>      
-
-                        <div id="a3" class="tabcontent">
-                            <div id="flip2">narzedziami
-                            </div>
-
-                            <div id="panel2">narzedziami
-                            </div>
-
-                        </div>                    
-                    </div> 
-                </div>    
-
-
-
-    
-  <div class="col-sm-1">
-           
-           
-       
-       <div class="col-sm-1">
-           
-           <p onclick="openCity(event, 'a2')" id="defaultOpen">2</p>
-       </div> 
-       
-       <div class="col-sm-1">
-           
-           <p onclick="openCity(event, 'a3')" id="defaultOpen">3</p>
-       </div> 
-
----------------
-
-
-
-
-    
-        <div class="row">            
-            <!-- NAVIGATOR 
-            <div class="col-sm-3 margin">
-                
-                <div class="panelCard">
-                <div class="tab menu">
-                    <div class="row">
-                        
-                        
-
-                    </div>
-                </div> 
-                </div>  
-            </div>
-        
-            
-            <div class="col-sm-9 margin">
-                
-                <div class="col">
-                
-                 <div id="a1" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip1">INFORMACJE</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel1">
-                                                <div class="container">
-                                                    
-                                                    	<div id="gallery" style="">
-                                    {% for x in filmy1 %}
-
-
-                                    <img alt="Youtube Video"
-                                         data-type="youtube"
-                                         data-videoid="{{x.videoID}}"
-                                         data-description="You can include youtube videos easily!">
-
-
-
-
-                            {% endfor %}
-                                </div>
-
-
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                        </div>  
-                        </div>  
-                        </div>  
-                        </div>  
-
-
-
-                 <div id="a2" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip2">RYNKI</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel2">RYNKI</div>
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                            
-                        </div>  
-                    </div>
-                    
-                    
-                 <div id="a3" class="tabcontent">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="panelCard">
-                                
-                                    <div class="col-sm-9">
-                                    <div class="cardIcci">
-                                        <div id="flip3">NARZĘDZIA</div>
-
-                                    </div>
-                                    </div>     
-                                </div>
-
-                            </div> 
-                            
-                            <div class="col-sm-9">
-                                <div class="panelCard">
-                                    <div class="col-sm-9">
-                                        <div class="cardIcci">
-                                            <div id="panel3">NARZĘDZIA</div>
-                                        </div>
-                                    </div>     
-                                </div>
-                            </div>   
-                            
-                        </div>  
-                    </div>                    
-                  
-            -->
-    
-    
-
-
-
-
-    
-        
-  
-    
-    
-    
-    
-    
-    
-    <style>
-    /*
-    .container-fluid {
-        padding-right: 0px; 
-        padding-left: 0px; 
-        
-    }
-
-    
-    /*
-    .desktop {
-        background-color: #fff;
-        margin-top: 0.1%;
-        margin-right: 0.1%;
-        margin-left: 0.1%;
-        height: 90vh; 
-        border-color: #000 !important;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-     
-        }
-
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;   
-        }
-
-    
-
-
-
-    .panelCard {
-        background-color: #FFF;
-        border-color: #000;
-        border-radius: 15px;
-        }
-
-    
-    */
-
-
-    /*  TABLINKS  */
-
-
-        .tab button.active {
-            background-color: #4ec6d8;
-            width: 100%;
-            box-shadow: 2px 2px 15px #378c98;
-            /*box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.5) inset;*/
-            border: 0px;
-
-        }
-
-        .tablinks {
-            width: 100%;
-            height: 75px;
-            margin: 2%;
-            background-color: #378c98;
-            box-shadow: 2px 2px 15px #378c98;
-            border: 0px;
-            padding: 0;
-            border-radius: 15px;
-
-        }
-
-        .tabcontent {
-            display: none;
-            padding: 0px 0px;
-            border: 0px solid #ccc;
-            border-top: none;
-        }
-
-
-
-    /*  SLIDE  */
-
-
-        #panel1, #panel2, #panel3, #flip1, #flip2, #flip3 {
-            padding: 5px;
-            text-align: center;
-        }
-
-        #panel1, #panel2, #panel3 {
-            width: 100%;
-            padding: 5px;
-            display: none;
-        }
-
-    
-    
-    /*
-
-    
-    .noPadding {
-         padding-right: 5px;
-         padding-left: 5px;
-    }
-    
-    .kartaMenu {
-        background-color: #378c98;
-        color: #fff;
-        text-align: center;
-        border-color: #000 !important;
-        border-radius: 5px;
-        padding: 1% 7%;
-        margin: 0% 0.05%;
-        width: 33.2%;
-    
-
-    }
-    
-    .zagiecieP {
-    border-bottom-right-radius: 225px;
-    }
-    
-    .zagiecieL {
-        border-bottom-right-radius: 225px;
-    }
-    
-    
-
-    
-    .monitor {
-        margin-top: 2%;
-        margin-left: 5px;
-        margin-right: 5px;
-
-        height: 80vh;
-        width: 100%;
-        border-radius: 5px;
-      
-        background-color: #205158;
-    }
-    
-    .galleryBase { 
-        margin-top: 15%;
-        
-    }
-    
-    
-    
-    */
-    
-    
-    
-  /* <!---------------------- END ----------------------> */  
-    
-    
-    
-    
     
